@@ -1,0 +1,227 @@
+@import '../../styles/variables.scss';
+
+.resume {
+  background-color: $white;
+  color: $color1;
+  font-family: $inconsolata-font-family;
+  width: 100%;
+}
+
+.resume-container {
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 20px 0;
+  width: 70%;
+}
+
+.sub-headline {
+  border-bottom: 1px solid $color1;
+  display: inline-block;
+  font-weight: 600;
+  margin: 20px 0;
+  padding: 0 0 5px;
+}
+
+.headline {
+  display: inline-block;
+  font-size: 36px;
+  margin: 10px 0 0 15px;
+  vertical-align: top;
+  width: 80%;
+
+  a {
+    color: $color1;
+    text-decoration: none;
+
+    &:hover {
+      color: $color2;
+      text-decoration: underline;
+    }
+  }
+}
+
+.hidden-text {
+  left: -9999px;
+  position: absolute;
+  top: -9999px;
+}
+
+.email-link,
+.link {
+  display: block;
+  font-size: 80%;
+  font-weight: normal;
+  margin: 5px 0;
+}
+
+.link svg {
+  margin-left: 5px;
+  margin-bottom: -1px;
+}
+
+.summary-paragraph {
+  line-height: 18px;
+  margin: 0 0 5px;
+}
+
+.resume-img {
+  border: 2px solid $color1;
+  border-radius: 50%;
+  display: inline-block;
+  max-width: 120px;
+  min-height: 110px;
+  min-width: 110px;
+  padding: 2px;
+  width: 15%;
+}
+
+.main-section {
+  .sub-headline {
+    margin: 5px 0;
+  }
+}
+
+.skills-container {
+  display: flex;
+  flex-flow: wrap;
+  margin: 25px 0;
+}
+
+.skills-title {
+  flex: 1 0 100%;
+  margin-bottom: 20px;
+}
+
+.skills-wrapper,
+.job-wrapper {
+  margin: 25px 0;
+  padding: 0;
+
+  h4,
+  h5 {
+    margin: 10px 0 8px;
+  }
+
+  h4 {
+    font-weight: 600;
+  }
+
+  li {
+    font-size: 90%;
+    line-height: 20px;
+    list-style: none;
+    text-decoration: none;
+    
+    strong {
+      font-weight: 700;
+    }
+  }
+}
+
+.tooltip-target-css,
+.tooltip-target-javascript {
+  appearance: none;
+  background-color: $inherit;
+  border: none;
+  color: $color1;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 0;
+  text-align: left;
+
+  .open {
+    display: block;
+  }
+}
+
+.tooltip-target-css:hover,
+.tooltip-target-javascript:hover {
+  cursor: pointer;
+
+  & .title {
+    border-bottom: 1px solid $color1;
+    text-align: left;
+  }
+}
+
+.tooltip-target-css:focus,
+.tooltip-target-javascript:focus {
+  outline: none;
+}
+
+.tooltip {
+  border: 1px solid $color1;
+  border-radius: 2px;
+  color: $color1;
+  display: none;
+  margin: 5px 0;
+  padding: 5px 8px;
+
+  li {
+    line-height: 15px;
+  }
+}
+
+.job-link {
+  color: $color1;
+  text-decoration: none;
+
+  &:hover {
+    color: $color2;
+    text-decoration: underline;
+  }
+}
+
+.skills-wrapper {
+  flex: 1 0 50%;
+  margin: 0;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+.footer-button {
+  display: inline-block;
+  margin: 0 3px 0 3px;
+
+  a {
+    border: 2px solid $color5;
+    border-radius: 3px;
+    color: $color5;
+    font-size: 85%;
+    font-weight: 700;
+    padding: 10px 30px;
+    text-decoration: none;
+  }
+
+  a:hover {
+    background: $color5;
+    color: $white;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .resume-container {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .resume-container {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .resume-container {
+    width: 90%;
+  }
+
+  .headline {
+    font-size: 32px;
+    margin-left: 0;
+  }
+}

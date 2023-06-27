@@ -1,0 +1,54 @@
+@import '../../styles/variables.scss';
+
+.now-playing {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  height: 50px;
+  margin: 20px 0;
+  justify-content: flex-start;
+
+  @media screen and (max-width: $mobile) {
+    height: auto;
+    margin-left: 24px;
+  }
+}
+
+.album-cover img {
+  border-radius: 50%;
+  margin: 0 8px;
+  width: 40px;
+
+  @media screen and (max-width: $mobile) {
+    margin: 0 8px 0 0;
+  }
+}
+
+.artist,
+.song-name {
+  font-weight: 600;
+}
+
+.song-name {
+  margin: 0 0 0 5px;
+}
+
+.artist {
+  margin: 0 1px 0;
+}
+
+@media screen and (max-width: $mobile) {  
+  .now-listening {
+    flex: 1 0 100%;
+    margin: 5px 0;
+  }
+
+  .artist,
+  .song-name {
+    font-size: 13px;
+  }
+
+  .artist {
+    margin: 0;
+  }
+}

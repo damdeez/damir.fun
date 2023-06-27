@@ -1,0 +1,108 @@
+@import '../../styles/variables.scss';
+
+@keyframes blink {  
+  0% { 
+    opacity: 0;
+  }
+  
+  50% { 
+    opacity: 1;
+  }
+}
+
+.main {
+  align-items: center;
+  display: flex;
+  max-width: 880px;
+  
+  @media screen and (max-width: $mobile) {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 48px;
+  }
+}
+
+.main-text {
+  h1,
+  h2 {
+    color: $color1;
+    font-family: $inconsolata-font-family;
+    margin: 0 0 20px 0;
+  }
+
+  h1 {
+    font-size: 48px;
+    font-weight: 600;
+
+    @media screen and (max-width: $mobile) {
+      font-size: 28px;
+      text-align: left;
+    }
+
+    &::after {
+      animation: blink 1s steps(1, end) infinite;
+      content: '| ';
+    }
+  }
+
+  h2 {
+    font-size: 34px;
+
+    @media screen and (max-width: $mobile) {
+      font-size: 18px;
+      text-align: left;
+      margin-left: 24px;
+    }
+  }
+
+  h3 {
+    font-size: 20px;
+    line-height: 30px;
+
+    @media screen and (max-width: $mobile) {
+      font-size: 18px;
+      text-align: left;
+      margin-left: 24px;
+    }
+    
+    a {
+      color: $color5;
+      text-decoration: none;
+      width: 120px;
+  
+      &:hover {
+        color: $color1;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.intro-paragraph {
+  font-size: 48px;
+  font-weight: 600;
+
+  @media screen and (max-width: $mobile) {
+    font-size: 28px;
+    text-align: left;
+  }
+
+  &::after {
+    animation: blink 1s steps(1, end) infinite;
+    content: '| ';
+  }
+}
+
+.damir-img {
+  border: 5px solid $color1;
+  border-radius: 50%;
+  height: 200px;
+  margin: 0 24px 0 0;
+  width: 200px;
+
+  @media screen and (max-width: $mobile) {
+    margin-right: 0;
+    margin-bottom: 48px;
+  }
+}
