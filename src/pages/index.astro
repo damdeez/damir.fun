@@ -2,10 +2,12 @@
 import Layout from '../layouts/Layout.astro';
 import '../styles/global.scss';
 import Main from '../components/Main/Main'
+import NowPlaying from '../components/NowPlaying/NowPlaying';
 ---
 
 <Layout title="damir.fun | Frontend Software Engineer and Developer">
 	<main class="main-page-content">
 		<Main />
+		<NowPlaying client:load />
 	</main>
 </Layout>

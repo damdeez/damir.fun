@@ -4,12 +4,9 @@ interface Image {
   size: string;
 }
 
-const data = await fetch(`https://ws.audioscrobbler.com/2.0/?method=user.getRecentTracks&user=damdeez&api_key=${import.meta.env.LASTFM_KEY}&limit=1&format=json`).then((response) =>
-    response.json()
-  );
+const data = await fetch(`https://ws.audioscrobbler.com/2.0/?method=user.getRecentTracks&user=damdeez&api_key=${import.meta.env.PUBLIC_LASTFM_KEY}&limit=1&format=json`).then((response) => response.json());
 
 const spotifyDataRecent = data.recenttracks.track[0];
-console.info('spotifyDataRecent', spotifyDataRecent);
 
 const NowPlaying = () => {
   return (
