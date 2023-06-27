@@ -68,8 +68,25 @@
     
     a {
       color: $color5;
+      font-weight: 600;
       text-decoration: none;
       width: 120px;
+
+      &:nth-child(2) {
+        color: $color2;
+      }
+
+      &:nth-child(3) {
+        color: $color3;
+      }
+
+      &:nth-child(4) {
+        color: $color4;
+      }
+
+      &:nth-child(5) {
+        color: $color1;
+      }
   
       &:hover {
         color: $color1;
