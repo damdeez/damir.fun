@@ -110,7 +110,7 @@ const Resume = () => {
                       <li>RESTful API&apos;s</li>
                       <li>Webpack</li>
                       <li>Node.js</li>
-                      <li>NextJS</li>
+                      <li>Next.js</li>
                       <li>Astro</li>
                     </ul>
                   </div>
