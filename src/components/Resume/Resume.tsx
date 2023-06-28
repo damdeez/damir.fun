@@ -1,16 +1,14 @@
 /* eslint-disable max-len */
 import React from 'react';
 
-// import HelmetMeta from '../components/Meta/HelmetMeta';
 import './resume.scss';
 import damirJpg from '/damir.jpg';
 import resumePdf from '/DamirResume2023.pdf';
 
 const Resume = () => {
+  // Clean this up
   const [cssSkillsSectionOpen, toggleCssSkills] = React.useState(true);
   const [jsSkillsSectionOpen, toggleJsSkills] = React.useState(true);
-  const toggleCss = () => toggleCssSkills(!cssSkillsSectionOpen);
-  const toggleJs = () => toggleJsSkills(!jsSkillsSectionOpen);
 
   const LinkSVG = () => (
     <svg
@@ -29,7 +27,6 @@ const Resume = () => {
   return (
     <section className="resume">
       <section className="resume-container">
-        {/* <HelmetMeta pageTitle="Resume | Web Development by Damir, Senior Software Engineer, Senior Web Developer, Senior Frontend Developer, Senior Frontend Engineer" /> */}
         <header className="header">
           <img src={damirJpg} className="resume-img" alt="Damir" />
           <h1 className="headline">
@@ -71,7 +68,7 @@ const Resume = () => {
                 <button
                   type="button"
                   className="tooltip-target-css"
-                  onClick={toggleCss}
+                  onClick={() => toggleCssSkills(!cssSkillsSectionOpen)}
                 >
                   <span className="title">
                     {cssSkillsSectionOpen ? '- CSS' : '+ CSS *'}
@@ -95,7 +92,7 @@ const Resume = () => {
                 <button
                   type="button"
                   className="tooltip-target-javascript"
-                  onClick={toggleJs}
+                  onClick={() => toggleJsSkills(!jsSkillsSectionOpen)}
                 >
                   <span className="title">
                     {jsSkillsSectionOpen ? '- JavaScript' : '+ JavaScript *'}
@@ -113,8 +110,8 @@ const Resume = () => {
                       <li>RESTful API&apos;s</li>
                       <li>Webpack</li>
                       <li>Node.js</li>
-                      <li>Express</li>
-                      <li>GatsbyJS</li>
+                      <li>NextJS</li>
+                      <li>Astro</li>
                     </ul>
                   </div>
                 </button>
