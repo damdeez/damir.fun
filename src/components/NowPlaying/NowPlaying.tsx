@@ -17,6 +17,7 @@ const nowPlaying: boolean = spotifyDataRecent?.['@attr']?.nowplaying ?? false;
 const albumArtwork: AlbumArtwork[] = spotifyDataRecent.image;
 const artist: Artist = spotifyDataRecent.artist;
 const songName: string = spotifyDataRecent.name;
+const albumCover = albumArtwork.find((image: AlbumArtwork) => image.size === 'medium')?.['#text'] ?? '';
 
 const NowPlaying = () => {
   return (
@@ -27,7 +28,7 @@ const NowPlaying = () => {
           {albumArtwork
             && (
               <span className="album-cover">
-                <img alt="album-cover" src={albumArtwork.find((image: AlbumArtwork) => image.size === 'medium')?.['#text']} />
+                <img alt="album-cover" src={albumCover} />
               </span>
             )}
           {artist && <span className="artist">{artist['#text']}</span>}
