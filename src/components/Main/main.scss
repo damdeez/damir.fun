@@ -26,7 +26,7 @@
 .main-text {
   h1,
   h2 {
-    color: $color1;
+    color: $white;
     font-family: $inconsolata-font-family;
     margin: 0 0 20px 0;
   }
@@ -74,22 +74,43 @@
 
       &:nth-child(2) {
         color: $color2;
+
+        &:hover {
+          color: $color5;
+        }
       }
 
       &:nth-child(3) {
         color: $color3;
+
+        &:hover {
+          color: $color4;
+        }
       }
 
       &:nth-child(4) {
         color: $color4;
+        
+        &:hover {
+          color: $color3;
+        }
       }
 
       &:nth-child(5) {
-        color: $color1;
+        color: $color5;
+
+        &:hover {
+          color: $color2;
+        }
+      }
+
+      &:nth-child(6) {
+        &:hover {
+          color: $white;
+        }
       }
   
       &:hover {
-        color: $color1;
         cursor: pointer;
       }
     }
@@ -112,7 +133,7 @@
 }
 
 .damir-img {
-  border: 5px solid $color1;
+  border: 5px solid $white;
   border-radius: 50%;
   min-height: 200px;
   margin: 0 24px 0 0;
