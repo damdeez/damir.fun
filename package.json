@@ -2,7 +2,7 @@
   "name": "damir.fun",
   "type": "module",
   "version": "1.0.0",
-  "description": "Personal Website v3",
+  "description": "Personal Website v4",
   "author": "Damir Harambasic",
   "license": "ISC",
   "scripts": {
@@ -14,11 +14,11 @@
   },
   "dependencies": {
     "@astrojs/react": "^2.2.1",
-    "@types/react": "^18.2.17",
+    "@types/react": "^18.2.19",
     "@types/react-dom": "^18.2.7",
-    "astro": "^2.9.6",
+    "astro": "^2.10.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "sass": "^1.64.1"
+    "sass": "^1.64.2"
   }
 }
