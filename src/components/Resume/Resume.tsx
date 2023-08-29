@@ -109,9 +109,9 @@ const Resume = () => {
                       <li>GraphQL</li>
                       <li>RESTful API&apos;s</li>
                       <li>Webpack</li>
-                      <li>Node.js</li>
-                      <li>Next.js</li>
                       <li>Astro</li>
+                      <li>Node.js</li>
+                      {/* <li>Next.js</li> */}
                     </ul>
                   </div>
                 </button>
@@ -144,7 +144,7 @@ const Resume = () => {
                 Hackbright Academy.
               </li>
               <li>
-                - Part of a hiring commitee and helped mentor new Engineers.
+                - Part of a hiring committee and helped mentor new Engineers.
               </li>
               <li>
                 - Worked across multiple projects and teams including: client
@@ -219,7 +219,7 @@ const Resume = () => {
               </li>
               <li>
                 - Handle initial front-end development, support and maintenance
-                for Overstock.com microsites, homepage content, and promotional
+                for Overstock.com micro-sites, homepage content, and promotional
                 email/content/pages. Take part in QA and on-call when needed.
               </li>
             </ul>
@@ -258,7 +258,7 @@ const Resume = () => {
         </main>
         <footer className="footer">
           <div className="footer-button">
-            <a href="mailto:yes@damir.fun">Get In Touch</a>
+            <a href="mailto:damir.hara@gmail.com">Get In Touch</a>
           </div>
           <div className="footer-button">
             <a href={resumePdf}>Download PDF</a>
