@@ -2,7 +2,6 @@
 import React from 'react';
 
 import './resume.scss';
-import damirJpg from '/damir.jpg';
 import resumePdf from '/DamirResume2023.pdf';
 
 const Resume = () => {
@@ -28,7 +27,7 @@ const Resume = () => {
     <section className="resume">
       <section className="resume-container">
         <header className="header">
-          <img src={damirJpg} className="resume-img" alt="Damir" />
+          <img src="/images/damir.jpg" className="resume-img" alt="Damir" />
           <h1 className="headline">
             Damir Harambasic{' '}
             <span className="hidden-text">
