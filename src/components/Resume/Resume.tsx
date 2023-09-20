@@ -1,13 +1,10 @@
 /* eslint-disable max-len */
-import React from 'react';
-
 import './resume.scss';
 import resumePdf from '/DamirResume2023.pdf';
 
 const Resume = () => {
-  // Clean this up
-  const [cssSkillsSectionOpen, toggleCssSkills] = React.useState(true);
-  const [jsSkillsSectionOpen, toggleJsSkills] = React.useState(true);
+  const jsSkillsSectionOpen = true;
+  const cssSkillsSectionOpen = true;
 
   const LinkSVG = () => (
     <svg
@@ -24,9 +21,10 @@ const Resume = () => {
   );
 
   return (
-    <section className="resume">
+    <main className="resume">
       <section className="resume-container">
         <header className="header">
+          {/* <a href="/" className="back-link">👈 go back</a> */}
           <img src="/images/damir.jpg" className="resume-img" alt="Damir" />
           <h1 className="headline">
             Damir Harambasic{' '}
@@ -46,13 +44,7 @@ const Resume = () => {
           <div className="resume-summary">
             <h3 className="sub-headline">SUMMARY</h3>
             <p className="summary-paragraph">
-              My code is always pixel-perfect: As a
-              technologist/developer/engineer with a keen eye for detail and
-              design, I love making intuitive web-based client interactions that
-              look as great as they function (no matter what browser or device).
-              With site speed and user engagement as key factors in today&apos;s
-              tech landscape, I prioritize performance alongside design,
-              usability, and up-and-coming technologies.
+              Passionate and experienced UI Software Web Engineer with a love for JavaScript and Design. A natural leader who values clear communication. Balancing design and technical expertise, I create pixel-perfect, high-performance web interactions.
             </p>
           </div>
         </header>
@@ -67,7 +59,6 @@ const Resume = () => {
                 <button
                   type="button"
                   className="tooltip-target-css"
-                  onClick={() => toggleCssSkills(!cssSkillsSectionOpen)}
                 >
                   <span className="title">
                     {cssSkillsSectionOpen ? '- CSS' : '+ CSS *'}
@@ -91,7 +82,6 @@ const Resume = () => {
                 <button
                   type="button"
                   className="tooltip-target-javascript"
-                  onClick={() => toggleJsSkills(!jsSkillsSectionOpen)}
                 >
                   <span className="title">
                     {jsSkillsSectionOpen ? '- JavaScript' : '+ JavaScript *'}
@@ -108,9 +98,9 @@ const Resume = () => {
                       <li>GraphQL</li>
                       <li>RESTful API&apos;s</li>
                       <li>Webpack</li>
-                      <li>Astro</li>
+                      <li>Astro <span className="cool-fact">Used on this site! 🚀</span></li>
+                      <li>Next.js</li>
                       <li>Node.js</li>
-                      {/* <li>Next.js</li> */}
                     </ul>
                   </div>
                 </button>
@@ -228,17 +218,14 @@ const Resume = () => {
                 Freelance Developer and Designer{' '}
                 <span className="span-light">@</span> Damir Hara Design
               </h4>
-              <h5>March 2013 - Present</h5>
+              <h5>March 2013 - Infinite</h5>
               <li>
-                <a className="job-link" href="https://www.damirthe.dev">
-                  https://www.damirthe.dev
-                </a>
               </li>
               <li>
-                - Help companies/clients build websites and web apps from
+                - Helped companies/clients build websites and web apps from
                 scratch or by jumping in the middle of the project. I&apos;ve
                 worked on everything from simple one-page static websites to
-                full web apps.
+                production React apps served to millions of people.
               </li>
               <li>
                 <strong>Clients worked with:</strong> Infowrap.com, Cottonwood
@@ -264,7 +251,7 @@ const Resume = () => {
           </div>
         </footer>
       </section>
-    </section>
+    </main>
   );
 };
 
