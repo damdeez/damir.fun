@@ -1,10 +1,21 @@
 @import '../../styles/variables.scss';
 
-.cool-fact {
-  background-color: $color4;
-  color: $color1;
+.built-with {
+  color: $color3;
   border-radius: 4px;
   padding: 2px 4px;
-  font-size: 12px;
-  
+  font-size: 13px;
+  position: absolute;
+  bottom: 15px;
+  right: 40px;
+
+  a {
+    color: $color3;
+  }
+
+  @media screen and (max-width: $mobile) {
+    left: 44px;
+    // For now:
+    display: none;
+  }
 }
