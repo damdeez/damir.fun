@@ -74,7 +74,8 @@
       text-decoration: none;
       text-transform: capitalize;
       width: 120px;
-      color: $color1;
+      // Fix ally issue
+      color: #1e1e1e;
       border-radius: 4px;
       letter-spacing: 0.2px;
       padding: 2px 4px;
