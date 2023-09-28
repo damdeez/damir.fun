@@ -55,9 +55,10 @@
     }
   }
 
-  h2 {
+  .main-paragraph {
     font-size: 20px;
     line-height: 30px;
+    font-weight: 300;
 
     @media screen and (max-width: $mobile) {
       font-size: 18px;
@@ -65,47 +66,60 @@
       margin-left: 24px;
     }
     
-    a {
+    a,
+    ul li a {
       color: $color5;
       font-weight: 600;
+      font-size: 12.5px;
       text-decoration: none;
+      text-transform: capitalize;
       width: 120px;
+      color: $color1;
+      border-radius: 4px;
+      letter-spacing: 0.2px;
+      padding: 2px 4px;
+
+      &:nth-child(1) {
+        background-color: $white;
+      }
 
       &:nth-child(2) {
-        color: $color2;
+        background-color: $color2;
 
         &:hover {
-          color: $color5;
+          background-color: $color5;
         }
       }
 
       &:nth-child(3) {
-        color: $color3;
+        background-color: $color3;
 
         &:hover {
-          color: $color4;
+          background-color: $color4;
         }
       }
 
       &:nth-child(4) {
-        color: $color4;
+        background-color: $color4;
         
         &:hover {
-          color: $color3;
+          background-color: $color3;
         }
       }
 
       &:nth-child(5) {
-        color: $color5;
+        background-color: $color5;
 
         &:hover {
-          color: $color2;
+          background-color: $color2;
         }
       }
 
       &:nth-child(6) {
+        background-color: $color2;
+        
         &:hover {
-          color: $white;
+          background-color: $white;
         }
       }
   
