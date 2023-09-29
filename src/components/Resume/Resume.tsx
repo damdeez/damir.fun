@@ -1,6 +1,6 @@
 /* eslint-disable max-len */
 import './resume.scss';
-import resumePdf from '/DamirResume2023.pdf';
+import resumePdf from '/DamirResume2023.5.pdf';
 
 const Resume = () => {
   const jsSkillsSectionOpen = true;
@@ -36,7 +36,7 @@ const Resume = () => {
             </span>
             <span className="link">
               <a href="https://www.linkedin.com/in/damirharambasic">
-                LinkedIn
+                linkedin.com/in/damirharambasic
                 <LinkSVG />
               </a>
             </span>
@@ -44,7 +44,7 @@ const Resume = () => {
           <div className="resume-summary">
             <h3 className="sub-headline">SUMMARY</h3>
             <p className="summary-paragraph">
-              Passionate and experienced UI Software Web Engineer with a love for JavaScript and Design. A natural leader who values clear communication. Balancing design and technical expertise, I create pixel-perfect, high-performance web interactions.
+              Passionate and experienced UI Software Web Engineer with a love for JavaScript and Design. A natural leader who values clear communication, great design and creating pixel-perfect, high-performance web interactions.
             </p>
           </div>
         </header>
@@ -69,11 +69,11 @@ const Resume = () => {
                     }`}
                   >
                     <ul>
+                      <li>Styled Components</li>
                       <li>PostCSS</li>
                       <li>LESS</li>
                       <li>SASS</li>
                       <li>CSS Modules</li>
-                      <li>Styled Components</li>
                     </ul>
                   </div>
                 </button>
@@ -95,8 +95,9 @@ const Resume = () => {
                       <li>React</li>
                       <li>Redux</li>
                       <li>TypeScript</li>
-                      <li>GraphQL</li>
+                      <li>GraphQL (Apollo)</li>
                       <li>RESTful API&apos;s</li>
+                      <li>React Testing Library & Jest</li>
                       <li>Webpack</li>
                       <li>Astro <span className="cool-fact">Used on this site! 🚀</span></li>
                       <li>Next.js</li>
@@ -113,6 +114,7 @@ const Resume = () => {
               <li>- Wireframing &amp; Prototyping</li>
               <li>- Cross-browser compatibility</li>
               <li>- Communication &amp; Liaison</li>
+              <li>- Web Accessibility</li>
             </ul>
           </section>
           <section className="experience-container">
@@ -137,7 +139,7 @@ const Resume = () => {
               </li>
               <li>
                 - Worked across multiple projects and teams including: client
-                banking, internal tools and most recently working on our new
+                banking, growth, internal tools and most recently working on our new
                 Design System.
               </li>
             </ul>
@@ -156,6 +158,9 @@ const Resume = () => {
                 - Rebuilt the Webpack Server-side Rendering portion of our
                 NodeJS powered app.
               </li>
+              <li>
+                - This was my brief second stint at Overstock.
+              </li>
             </ul>
 
             <ul className={"job-wrapper"}>
@@ -168,7 +173,7 @@ const Resume = () => {
                 - Built the next generation Blockchain-based UI using React,
                 Redux, Webpack, Express, and Node.js.
               </li>
-              <li>- Filled in for multiple temporary Dev Lead roles.</li>
+              <li>- Filled in for multiple temporary Dev Lead stints.</li>
             </ul>
 
             <ul className={"job-wrapper"}>
