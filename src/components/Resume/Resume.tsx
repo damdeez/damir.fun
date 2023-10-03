@@ -36,7 +36,7 @@ const Resume = () => {
             </span>
             <span className="link">
               <a href="https://www.linkedin.com/in/damirharambasic">
-                linkedin.com/in/damirharambasic
+                linkedin.com/in/damir
                 <LinkSVG />
               </a>
             </span>
