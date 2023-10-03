@@ -13,13 +13,12 @@
 .main {
   align-items: center;
   display: flex;
-  max-width: 880px;
+  flex-direction: column;
   
   @media screen and (max-width: $mobile) {
     align-items: center;
     display: flex;
     flex-direction: column;
-    margin-top: 48px;
   }
 }
 
@@ -148,14 +147,13 @@
 .damir-img {
   border: 3px solid $white;
   outline: 3px solid $color2;
-  border-radius: 50%;
-  min-height: 200px;
-  margin: 0 24px 0 0;
-  min-width: 200px;
+  border-radius: 25%;
+  margin: 0 0 40px 0;
+  width: 160px;
+  height: 160px;
+  align-self: flex-start;
 
   @media screen and (max-width: $mobile) {
-    margin-right: 0;
-    margin-bottom: 48px;
-    max-width: 190px;
+    margin-left: 24px;
   }
 }
