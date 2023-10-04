@@ -97,7 +97,7 @@ const Resume = () => {
                       <li>TypeScript</li>
                       <li>GraphQL (Apollo)</li>
                       <li>RESTful API&apos;s</li>
-                      <li>React Testing Library & Jest</li>
+                      <li>React Testing Library</li>
                       <li>Webpack</li>
                       <li>Astro <span className="cool-fact">Used on this site! 🚀</span></li>
                       <li>Next.js</li>
