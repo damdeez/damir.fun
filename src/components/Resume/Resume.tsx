@@ -24,8 +24,10 @@ const Resume = () => {
     <main className="resume">
       <section className="resume-container">
         <header className="header">
-          {/* <a href="/" className="back-link">👈 go back</a> */}
-          <img src="/images/damir.jpg" className="resume-img" alt="Damir" />
+          {/* <a href="/" className="back-home">👈 go back</a> */}
+          <a href="/hireme" className="coffee">
+            <img src="/images/damir.jpg" className="resume-img" alt="Damir" />
+          </a>
           <h1 className="headline">
             Damir Harambasic{' '}
             <span className="hidden-text">
