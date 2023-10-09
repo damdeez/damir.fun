@@ -50,6 +50,13 @@
     font-size: 13px;
   }
 
+  .song-name {
+    max-width: 230px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
   .artist {
     margin: 0;
   }
