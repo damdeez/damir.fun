@@ -128,21 +128,17 @@ const Resume = () => {
               </h4>
               <h5>January 2020 - Present</h5>
               <li>
-                - Work on implementing the UX using TypeScript, React, Redux and
-                GraphQL/Apollo.
+                - Currently leading the Web Engineering effort on our new Design System and helping with migration.
               </li>
               <li>- Helped develop and launch the new bank.varomoney.com.</li>
-              <li>
-                - Participated in a mentorship program in collaboration with
-                Hackbright Academy.
-              </li>
               <li>
                 - Part of a hiring committee and helped mentor new Engineers.
               </li>
               <li>
-                - Worked across multiple projects and teams including: client
-                banking, growth, internal tools and most recently working on our new
-                Design System.
+                - Worked across multiple projects and teams including: client banking, growth, engagement, internal tools and design systems.
+              </li>
+              <li>
+                - Some Technologies I am working with: TypeScript, React, GraphQL/Apollo, Storybook, and React Testing Library.
               </li>
             </ul>
 
@@ -153,12 +149,10 @@ const Resume = () => {
               </h4>
               <h5>October 2019 - December 2019</h5>
               <li>
-                - Built the Product Page in Node.js, Express, Webpack, Redux,
-                and React.
+                - Built the Product Page in Node.js, Express, Webpack, Redux, and React.
               </li>
               <li>
-                - Rebuilt the Webpack Server-side Rendering portion of our
-                NodeJS powered app.
+                - Rebuilt the Webpack Server-side Rendering portion of our NodeJS powered app.
               </li>
               <li>
                 - This was my brief second stint at Overstock.
