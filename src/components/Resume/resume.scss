@@ -202,13 +202,13 @@
 
 .footer {
   display: flex;
+  gap: 10px;
   justify-content: center;
   margin: 50px 0;
 }
 
 .footer-button {
   display: inline-block;
-  margin: 0 3px 0 3px;
 
   a {
     border: 2px solid $color5;
