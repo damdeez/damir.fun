@@ -46,79 +46,11 @@ const Resume = () => {
           <div className="resume-summary">
             <h3 className="sub-headline">SUMMARY</h3>
             <p className="summary-paragraph">
-              Passionate and experienced UI Software Web Engineer with a love for JavaScript and Design. A natural leader who values clear communication, great design and creating pixel-perfect, high-performance web interactions.
+              Passionate and experienced Web Software Engineer who values clear communication, great design and creating pixel-perfect, high-performance web interactions.
             </p>
           </div>
         </header>
         <main className="main-section">
-          <section className="skills-container">
-            <div className="skills-title">
-              <h3 className="sub-headline">SKILLS</h3>
-            </div>
-            <ul className="skills-wrapper">
-              <li>- Semantic HTML</li>
-              <li>
-                <button
-                  type="button"
-                  className="tooltip-target-css"
-                >
-                  <span className="title">
-                    {cssSkillsSectionOpen ? '- CSS' : '+ CSS *'}
-                  </span>
-                  <div
-                    className={`tooltip ${
-                      cssSkillsSectionOpen ? 'open' : 'closed'
-                    }`}
-                  >
-                    <ul>
-                      <li>Styled Components</li>
-                      <li>PostCSS</li>
-                      <li>LESS</li>
-                      <li>SASS</li>
-                      <li>CSS Modules</li>
-                    </ul>
-                  </div>
-                </button>
-              </li>
-              <li>
-                <button
-                  type="button"
-                  className="tooltip-target-javascript"
-                >
-                  <span className="title">
-                    {jsSkillsSectionOpen ? '- JavaScript' : '+ JavaScript *'}
-                  </span>
-                  <div
-                    className={`tooltip ${
-                      jsSkillsSectionOpen ? 'open' : 'closed'
-                    }`}
-                  >
-                    <ul>
-                      <li>React</li>
-                      <li>Redux</li>
-                      <li>TypeScript</li>
-                      <li>GraphQL (Apollo)</li>
-                      <li>RESTful API&apos;s</li>
-                      <li>React Testing Library</li>
-                      <li>Webpack</li>
-                      <li>Astro <span className="cool-fact">Used on this site! 🚀</span></li>
-                      <li>Next.js</li>
-                      <li>Node.js</li>
-                    </ul>
-                  </div>
-                </button>
-              </li>
-            </ul>
-            <ul className="skills-wrapper">
-              <li>- Git &amp; CLI chops</li>
-              <li>- Troubleshooting </li>
-              <li>- Responsive Web Design</li>
-              <li>- Wireframing &amp; Prototyping</li>
-              <li>- Cross-browser compatibility</li>
-              <li>- Communication &amp; Liaison</li>
-              <li>- Web Accessibility</li>
-            </ul>
-          </section>
           <section className="experience-container">
             <h3 className="sub-headline">EXPERIENCE</h3>
             <ul className={"job-wrapper"}>
@@ -219,7 +151,7 @@ const Resume = () => {
                 Freelance Developer and Designer{' '}
                 <span className="span-light">@</span> Damir Hara Design
               </h4>
-              <h5>March 2013 - Infinite</h5>
+              <h5>March 2013 - &infin;</h5>
               <li>
               </li>
               <li>
@@ -234,13 +166,84 @@ const Resume = () => {
               </li>
             </ul>
           </section>
-          <section className="education-container">
-            <h3 className="sub-headline">EDUCATION</h3>
-            <ul className="job-wrapper">
-              <h4>University of Utah</h4>
-              <h5>Class of 2014</h5>
-              <li>BS, Mass Communication</li>
-            </ul>
+          <section className="skills-education-wrapper">
+            <section className="skills-container">
+              <div className="skills-title">
+                <h3 className="sub-headline">SKILLS</h3>
+              </div>
+              <ul className="skills-wrapper">
+                <li>
+                  <button
+                    type="button"
+                    className="tooltip-target-javascript"
+                  >
+                    <span className="title">
+                      {jsSkillsSectionOpen ? '- JavaScript' : '+ JavaScript *'}
+                    </span>
+                    <div
+                      className={`tooltip ${
+                        jsSkillsSectionOpen ? 'open' : 'closed'
+                      }`}
+                    >
+                      <ul>
+                        <li>React</li>
+                        <li>Redux</li>
+                        <li>TypeScript</li>
+                        <li>GraphQL (Apollo)</li>
+                        <li>RESTful API&apos;s</li>
+                        <li>React Testing Library</li>
+                        <li>Webpack</li>
+                        <li>Astro <span className="cool-fact">Used on this site! 🚀</span></li>
+                        <li>Next.js</li>
+                        <li>Node.js</li>
+                      </ul>
+                    </div>
+                  </button>
+                </li>
+                <li>
+                  <button
+                    type="button"
+                    className="tooltip-target-css"
+                  >
+                    <span className="title">
+                      {cssSkillsSectionOpen ? '- CSS' : '+ CSS *'}
+                    </span>
+                    <div
+                      className={`tooltip ${
+                        cssSkillsSectionOpen ? 'open' : 'closed'
+                      }`}
+                    >
+                      <ul>
+                        <li>Styled Components</li>
+                        <li>PostCSS</li>
+                        <li>LESS</li>
+                        <li>SASS</li>
+                        <li>CSS Modules</li>
+                      </ul>
+                    </div>
+                  </button>
+                </li>
+              </ul>
+              <ul className="skills-wrapper">
+                <li>- Semantic HTML</li>
+                <li>- Git &amp; CLI chops</li>
+                <li>- Troubleshooting </li>
+                <li>- Responsive Web Design</li>
+                <li>- Wireframing &amp; Prototyping</li>
+                <li>- Cross-browser compatibility</li>
+                <li>- Communication &amp; Liaison</li>
+                <li>- Web Accessibility</li>
+                <li>- Mentoring</li>
+              </ul>
+            </section>
+            <section className="education-container">
+              <h3 className="sub-headline">EDUCATION</h3>
+              <ul className="job-wrapper">
+                <h4>University of Utah</h4>
+                <h5>Class of 2014</h5>
+                <li>BS, Mass Communication</li>
+              </ul>
+            </section>
           </section>
         </main>
         <footer className="footer">

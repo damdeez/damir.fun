@@ -14,6 +14,10 @@
   width: 70%;
 }
 
+.header {
+  margin-bottom: 25px;
+}
+
 .back-home {
   position: absolute;
   top: 70px;
@@ -91,10 +95,18 @@
   }
 }
 
+.skills-education-wrapper {
+  display: flex;
+  margin-top: 25px;
+  gap: 25px;
+}
+
 .skills-container {
   display: flex;
   flex-flow: wrap;
-  margin: 25px 0;
+  border: 1px solid $black;
+  border-radius: 3px;
+  padding: 25px;
 }
 
 .skills-title {
@@ -106,6 +118,10 @@
 .job-wrapper {
   margin: 20px 0;
   padding: 0;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   h4,
   h5 {
@@ -131,6 +147,10 @@
       font-weight: 700;
     }
   }
+}
+
+.education-container {
+  padding: 25px;
 }
 
 .tooltip-target-css,
