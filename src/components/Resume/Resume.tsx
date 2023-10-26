@@ -173,17 +173,14 @@ const Resume = () => {
               </div>
               <ul className="skills-wrapper">
                 <li>
-                  <button
-                    type="button"
+                  <div
                     className="tooltip-target-javascript"
                   >
                     <span className="title">
-                      {jsSkillsSectionOpen ? '- JavaScript' : '+ JavaScript *'}
+                      - JavaScript
                     </span>
                     <div
-                      className={`tooltip ${
-                        jsSkillsSectionOpen ? 'open' : 'closed'
-                      }`}
+                      className="tooltip"
                     >
                       <ul>
                         <li>React</li>
@@ -198,21 +195,14 @@ const Resume = () => {
                         <li>Node.js</li>
                       </ul>
                     </div>
-                  </button>
+                  </div>
                 </li>
                 <li>
-                  <button
-                    type="button"
-                    className="tooltip-target-css"
-                  >
+                  <div className="tooltip-target-css">
                     <span className="title">
-                      {cssSkillsSectionOpen ? '- CSS' : '+ CSS *'}
+                      - CSS
                     </span>
-                    <div
-                      className={`tooltip ${
-                        cssSkillsSectionOpen ? 'open' : 'closed'
-                      }`}
-                    >
+                    <div className="tooltip">
                       <ul>
                         <li>Styled Components</li>
                         <li>PostCSS</li>
@@ -221,7 +211,7 @@ const Resume = () => {
                         <li>CSS Modules</li>
                       </ul>
                     </div>
-                  </button>
+                  </div>
                 </li>
               </ul>
               <ul className="skills-wrapper">
@@ -233,7 +223,7 @@ const Resume = () => {
                 <li>- Cross-browser compatibility</li>
                 <li>- Communication &amp; Liaison</li>
                 <li>- Web Accessibility</li>
-                <li>- Mentoring</li>
+                <li>- Mentoring &amp; Advising</li>
               </ul>
             </section>
             <section className="education-container">

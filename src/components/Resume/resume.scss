@@ -155,7 +155,6 @@
 
 .tooltip-target-css,
 .tooltip-target-javascript {
-  appearance: none;
   background-color: $inherit;
   border: none;
   color: $color1;
@@ -163,10 +162,6 @@
   font-size: inherit;
   padding: 0;
   text-align: left;
-
-  .open {
-    display: block;
-  }
 }
 
 .tooltip-target-css:hover,
@@ -188,8 +183,7 @@
   border: 1px solid $color1;
   border-radius: 2px;
   color: $color1;
-  display: none;
-  margin: 5px 0;
+  margin: 5px 20px 5px 0;
   padding: 5px 8px;
 
   li {
@@ -291,5 +285,9 @@
 
   .skills-wrapper {
     flex: 1 0 100%;
+  }
+
+  .tooltip {
+    margin: 5px 0;
   }
 }
