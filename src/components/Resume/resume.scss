@@ -279,4 +279,17 @@
     font-size: 32px;
     margin-left: 0;
   }
+
+  .skills-education-wrapper {
+    flex-direction: column;
+  }
+
+  .education-container {
+    padding: 0;
+    margin-bottom: 25px;
+  }
+
+  .skills-wrapper {
+    flex: 1 0 100%;
+  }
 }

@@ -243,6 +243,11 @@ const Resume = () => {
                 <h5>Class of 2014</h5>
                 <li>BS, Mass Communication</li>
               </ul>
+              <ul className="job-wrapper">
+                <h4>Salt Lake Community College</h4>
+                <h5>Class of 2012</h5>
+                <li>BS, General Studies</li>
+              </ul>
             </section>
           </section>
         </main>
