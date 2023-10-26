@@ -242,12 +242,8 @@ const Resume = () => {
           </section>
         </main>
         <footer className="footer">
-          <div className="footer-button">
-            <a href="mailto:damir.hara@gmail.com">Get In Touch</a>
-          </div>
-          <div className="footer-button">
-            <a href={resumePdf}>Download PDF</a>
-          </div>
+          <a className="footer-button" href="mailto:damir.hara@gmail.com">Get In Touch</a>
+          <a className="footer-button" href={resumePdf}>Download PDF</a>
         </footer>
       </section>
     </main>
