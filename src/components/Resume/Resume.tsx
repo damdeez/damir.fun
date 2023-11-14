@@ -53,7 +53,7 @@ const Resume = () => {
         <main className="main-section">
           <section className="experience-container">
             <h3 className="sub-headline">EXPERIENCE</h3>
-            <ul className={"job-wrapper"}>
+            <ul className="job-wrapper">
               <h4>
                 Sr. Frontend Engineer{' '}
                 <span className="span-light">@</span> Varo Bank
@@ -74,7 +74,7 @@ const Resume = () => {
               </li>
             </ul>
 
-            <ul className={"job-wrapper"}>
+            <ul className="job-wrapper">
               <h4>
                 Sr. Frontend Developer{' '}
                 <span className="span-light">@</span> Overstock.com
@@ -91,7 +91,7 @@ const Resume = () => {
               </li>
             </ul>
 
-            <ul className={"job-wrapper"}>
+            <ul className="job-wrapper">
               <h4>
                 Sr. Frontend/Full-Stack Developer{' '}
                 <span className="span-light">@</span> tZERO
@@ -104,7 +104,7 @@ const Resume = () => {
               <li>- Filled in for multiple temporary Dev Lead stints.</li>
             </ul>
 
-            <ul className={"job-wrapper"}>
+            <ul className="job-wrapper">
               <h4>
                 Frontend Developer <span className="span-light">@</span>{' '}
                 Overstock.com
