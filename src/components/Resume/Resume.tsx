@@ -99,7 +99,7 @@ const Resume = () => {
               <h5>September 2018 - October 2019</h5>
               <li>
                 - Built the next generation Blockchain-based UI using React,
-                Redux, Webpack, Express, and Node.js.
+                Redux, Webpack, Express, Node.js, and PostgreSQL.
               </li>
               <li>- Filled in for multiple temporary Dev Lead stints.</li>
             </ul>
