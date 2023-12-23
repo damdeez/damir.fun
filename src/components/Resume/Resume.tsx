@@ -3,9 +3,6 @@ import './resume.scss';
 import resumePdf from '/DamirResume2024.pdf';
 
 const Resume = () => {
-  const jsSkillsSectionOpen = true;
-  const cssSkillsSectionOpen = true;
-
   const LinkSVG = () => (
     <svg
       className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiBox-root"
