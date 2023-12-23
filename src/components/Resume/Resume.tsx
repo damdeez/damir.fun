@@ -1,6 +1,6 @@
 /* eslint-disable max-len */
 import './resume.scss';
-import resumePdf from '/DamirResume2023-5.pdf';
+import resumePdf from '/DamirResume2024.pdf';
 
 const Resume = () => {
   const jsSkillsSectionOpen = true;
