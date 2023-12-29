@@ -163,79 +163,52 @@ const Resume = () => {
               </li>
             </ul>
           </section>
-          <section className="skills-education-wrapper">
-            <section className="skills-container">
-              <div className="skills-title">
-                <h3 className="sub-headline">SKILLS</h3>
-              </div>
-              <ul className="skills-wrapper">
-                <li>
-                  <div
-                    className="tooltip-target-javascript"
-                  >
-                    <span className="title">
-                      - JavaScript
-                    </span>
-                    <div
-                      className="tooltip"
-                    >
-                      <ul>
-                        <li>React</li>
-                        <li>Redux</li>
-                        <li>TypeScript</li>
-                        <li>GraphQL (Apollo)</li>
-                        <li>RESTful API&apos;s</li>
-                        <li>React Testing Library</li>
-                        <li>Webpack</li>
-                        <li>Astro <span className="cool-fact">Used on this site! 🚀</span></li>
-                        <li>Next.js</li>
-                        <li>Node.js</li>
-                      </ul>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div className="tooltip-target-css">
-                    <span className="title">
-                      - CSS
-                    </span>
-                    <div className="tooltip">
-                      <ul>
-                        <li>Styled Components</li>
-                        <li>PostCSS</li>
-                        <li>LESS</li>
-                        <li>SASS</li>
-                        <li>CSS Modules</li>
-                      </ul>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-              <ul className="skills-wrapper">
-                <li>- Semantic HTML</li>
-                <li>- Git &amp; CLI chops</li>
-                <li>- Troubleshooting </li>
-                <li>- Responsive Web Design</li>
-                <li>- Wireframing &amp; Prototyping</li>
-                <li>- Cross-browser compatibility</li>
-                <li>- Communication &amp; Liaison</li>
-                <li>- Web Accessibility</li>
-                <li>- Mentoring &amp; Advising</li>
-              </ul>
-            </section>
-            <section className="education-container">
-              <h3 className="sub-headline">EDUCATION</h3>
-              <ul className="job-wrapper">
-                <h4>University of Utah</h4>
-                <h5>Class of 2014</h5>
-                <li>BS, Mass Communication</li>
-              </ul>
-              <ul className="job-wrapper">
-                <h4>Salt Lake Community College</h4>
-                <h5>Class of 2012</h5>
-                <li>BS, General Studies</li>
-              </ul>
-            </section>
+          <section className="skills-pill-container">
+            <div className="skills-title">
+              <h3 className="sub-headline">SKILLS</h3>
+            </div>
+            <ul>
+              <li className="main-skill">JavaScript</li>
+              <li>React</li>
+              <li>Redux</li>
+              <li>TypeScript</li>
+              <li>GraphQL (Apollo)</li>
+              <li>RESTful API&apos;s</li>
+              <li>React Testing Library</li>
+              <li>Webpack</li>
+              <li className="cool-fact-container">Astro{' '}
+                <span className="cool-fact">Used on this site! 🚀</span>
+              </li>
+              <li>Next.js</li>
+              <li>Node.js</li>
+              <li className="main-skill">CSS</li>
+              <li>Styled Components</li>
+              <li>PostCSS</li>
+              <li>SASS</li>
+              <li>CSS Modules</li>
+              <li>Semantic HTML</li>
+              <li>Git &amp; CLI chops</li>
+              <li>Troubleshooting</li>
+              <li>Responsive Web Design</li>
+              <li>Wireframing &amp; Prototyping</li>
+              <li>Cross-browser compatibility</li>
+              <li>Communication &amp; Liaison</li>
+              <li>Web Accessibility</li>
+              <li>Mentoring &amp; Advising</li>
+            </ul>
+          </section>
+          <section className="education-container">
+            <h3 className="sub-headline">EDUCATION</h3>
+            <ul className="job-wrapper">
+              <h4>University of Utah</h4>
+              <h5>Class of 2014</h5>
+              <li>BS, Mass Communication</li>
+            </ul>
+            <ul className="job-wrapper">
+              <h4>Salt Lake Community College</h4>
+              <h5>Class of 2012</h5>
+              <li>BS, General Studies</li>
+            </ul>
           </section>
         </main>
         <footer className="footer">
