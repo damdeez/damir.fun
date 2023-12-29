@@ -95,30 +95,6 @@
   }
 }
 
-.skills-pill-container {
-  margin-top: 25px;
-  ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 4px;
-  }
-  li {
-    background-color: $color1;
-    color: $white;
-    border-radius: 4px;
-    padding: 2px 4px;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-
-    &.main-skill {
-      color: $black;
-      background-color: $color3;
-      font-weight: 600;
-    }
-  }
-}
-
 .skills-title {
   flex: 1 0 100%;
   margin-bottom: 20px;
@@ -182,6 +158,32 @@
   margin: 0;
 }
 
+.skills-pill-container {
+  margin-top: 25px;
+  
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+  
+  li {
+    background-color: $color1;
+    color: $white;
+    border-radius: 4px;
+    padding: 2px 4px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    &.main-skill {
+      color: $black;
+      background-color: $color3;
+      font-weight: 600;
+    }
+  }
+}
+
 .cool-fact-container {
   padding-right: 0 !important;
 }
@@ -226,6 +228,18 @@
   .cool-fact,
   .footer {
     display: none;
+  }
+
+  .skills-pill-container {
+    li {
+      background-color: $white;
+      border: 1px solid $black;
+      color: $black;
+    }
+  }
+
+  .cool-fact-container {
+    padding-right: 4px !important;
   }
 }
 
