@@ -90,13 +90,12 @@ const Resume = () => {
 
             <ul className="job-wrapper">
               <h4>
-                Sr. Frontend/Full-Stack Developer{' '}
+                Sr. Full-Stack Developer{' '}
                 <span className="span-light">@</span> tZERO
               </h4>
               <h5>September 2018 - October 2019</h5>
               <li>
-                - Built the next generation Blockchain-based UI using React,
-                Redux, Webpack, Express, Node.js, and PostgreSQL.
+                - Built the next generation Blockchain-based UI using React, Redux, Webpack, Express, Node.js, and PostgreSQL.
               </li>
               <li>- Filled in for multiple temporary Dev Lead stints.</li>
             </ul>
