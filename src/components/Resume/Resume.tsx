@@ -2,26 +2,25 @@
 import './resume.scss';
 import resumePdf from '/DamirResume2024.pdf';
 
-const Resume = () => {
-  const LinkSVG = () => (
-    <svg
-      className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiBox-root"
-      focusable="false"
-      aria-hidden="true"
-      viewBox="0 0 24 24"
-      data-testid="OpenInNewIcon"
-      height="20"
-      width="20"
-    >
-      <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z" />
-    </svg>
-  );
+const LinkSvg = () => (
+  <svg
+    className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiBox-root"
+    focusable="false"
+    aria-hidden="true"
+    viewBox="0 0 24 24"
+    data-testid="OpenInNewIcon"
+    height="20"
+    width="20"
+  >
+    <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z" />
+  </svg>
+);
 
+const Resume = () => {
   return (
     <main className="resume">
       <section className="resume-container">
         <header className="header">
-          {/* <a href="/" className="back-home">👈 go back</a> */}
           <a href="/hireme" className="coffee">
             <img src="/images/damir.jpg" className="resume-img" alt="Damir" />
           </a>
@@ -36,7 +35,7 @@ const Resume = () => {
             <span className="link">
               <a href="https://www.linkedin.com/in/damirharambasic">
                 linkedin.com/in/damir
-                <LinkSVG />
+                <LinkSvg />
               </a>
             </span>
           </h1>
