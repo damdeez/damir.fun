@@ -77,7 +77,7 @@ const Resume = () => {
               </h4>
               <h5>October 2019 - December 2019</h5>
               <li>
-                - Built the Product Page in Node.js, Express, Webpack, Redux, and React.
+                - Fixed bugs and built features on the Product Page in Node.js, Express, Webpack, Redux, and React.
               </li>
               <li>
                 - Rebuilt the Webpack Server-side Rendering portion of our NodeJS powered app.
