@@ -184,10 +184,10 @@ const Resume = () => {
               <li>PostCSS</li>
               <li>SASS</li>
               <li>CSS Modules</li>
-              <li>Semantic HTML</li>
+              <li>Responsive Web Design</li>
+              <li className="main-skill">Semantic HTML</li>
               <li>Git &amp; CLI chops</li>
               <li>Troubleshooting</li>
-              <li>Responsive Web Design</li>
               <li>Wireframing &amp; Prototyping</li>
               <li>Cross-browser compatibility</li>
               <li>Communication &amp; Liaison</li>
