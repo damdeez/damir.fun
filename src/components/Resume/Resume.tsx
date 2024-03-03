@@ -8,7 +8,6 @@ const LinkSvg = () => (
     focusable="false"
     aria-hidden="true"
     viewBox="0 0 24 24"
-    data-testid="OpenInNewIcon"
     height="20"
     width="20"
   >
