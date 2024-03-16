@@ -26,7 +26,7 @@ const Resume = () => {
           <h1 className="headline">
             Damir Harambasic{' '}
             <span className="hidden-text">
-              Resume | Senior Frontend Engineer
+              Resume | Frontend Web Engineer
             </span>
             <span className="email-link">
               <a href="mailto:damir.hara@gmail.com">damir.hara@gmail.com</a>
@@ -50,19 +50,21 @@ const Resume = () => {
             <h3 className="sub-headline">EXPERIENCE</h3>
             <ul className="job-wrapper">
               <h4>
-                Sr. Frontend Engineer{' '}
+                Staff Software Engineer{' '}
                 <span className="span-light">@</span> Varo Bank
               </h4>
               <h5>January 2020 - Present</h5>
               <li>
-                - Currently leading the Web Engineering effort on our new Design System and helping with migration.
+                - Hired as a Senior Frontend Engineer, promoted to Staff-level in March 2024.
               </li>
-              <li>- Helped develop and launch the new bank.varomoney.com.</li>
+              <li>
+                - Currently working on the home page engagement team, although I tend to float around where ever I am needed.
+              </li>
               <li>
                 - Part of a hiring committee and helped mentor new Engineers.
               </li>
               <li>
-                - Worked across multiple projects and teams including: client banking, growth, engagement, internal tools and design systems.
+                - Previously worked across multiple projects and teams including: client banking, growth, engagement, internal tools and design systems.
               </li>
               <li>
                 - Some Technologies I am working with: TypeScript, React, GraphQL/Apollo, Storybook, and React Testing Library.
