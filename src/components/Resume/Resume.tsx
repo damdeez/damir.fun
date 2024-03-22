@@ -55,16 +55,16 @@ const Resume = () => {
               </h4>
               <h5>January 2020 - Present</h5>
               <li>
-                - Hired as a Senior Frontend Engineer, promoted to Staff-level in March 2024.
+                - Initially joined as a Senior Frontend Engineer and promoted to Staff Engineer in March 2024.
               </li>
               <li>
                 - Currently working on the home page engagement team, although I tend to float around where ever I am needed.
               </li>
               <li>
-                - Part of a hiring committee and helped mentor new Engineers.
+                - Active member of the hiring committee, with a focus on mentoring incoming Engineers.
               </li>
               <li>
-                - Previously worked across multiple projects and teams including: client banking, growth, engagement, internal tools and design systems.
+                - Previously worked across multiple projects and teams including: client banking, growth, engagement, internal tools and on our new design system.
               </li>
               <li>
                 - Some Technologies I am working with: TypeScript, React, GraphQL/Apollo, Storybook, and React Testing Library.
@@ -106,7 +106,7 @@ const Resume = () => {
                 Overstock.com
               </h4>
               <h5>October 2014 - September 2018</h5>
-              <li>Product Page Dev Team:</li>
+              <li className="italicize">Product Page Dev Team:</li>
               <li>
                 - Handled new feature implementation, A/B Tests, and bug
                 squishing on product pages.
@@ -130,7 +130,7 @@ const Resume = () => {
               <li>
                 - During this time I was promoted to Senior Frontend Developer.
               </li>
-              <li>Production Web Team:</li>
+              <li className="italicize">Production Web Team:</li>
               <li>
                 - Worked directly with Marketing, Product, and Back-end teams on
                 various projects concerning the homepage of Overstock.com.
