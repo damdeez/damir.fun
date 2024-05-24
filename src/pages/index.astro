@@ -1,14 +1,14 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import '../styles/global.scss';
-import Main from '../components/Main/Main'
+import Intro from '../components/Intro/Intro'
 import NowPlaying from '../components/NowPlaying/NowPlaying';
 import BuiltWith from '../components/BuiltWith/BuiltWith';
 ---
 
 <Layout title="damir.fun | Web Software Engineer and Developer">
 	<main class="main-page-content">
-		<Main />
+		<Intro />
 		<NowPlaying client:load />
 		<BuiltWith />
 	</main>
