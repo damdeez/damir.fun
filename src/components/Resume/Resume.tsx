@@ -179,12 +179,13 @@ const Resume = () => {
               <li>Redux</li>
               <li>TypeScript</li>
               <li>GraphQL (Apollo)</li>
-              <li>RESTful API&apos;s</li>
+              <li>REST APIs</li>
               <li>React Testing Library</li>
               <li>Webpack</li>
               <li className="cool-fact-container">
                 Astro <span className="cool-fact">Used on this site! 🚀</span>
               </li>
+              <li>Expo</li>
               <li>Next.js</li>
               <li>Node.js</li>
               <li className="main-skill">CSS</li>
