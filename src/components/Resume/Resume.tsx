@@ -24,10 +24,8 @@ const Resume = () => {
             <img src="/images/damir.jpg" className="resume-img" alt="Damir" />
           </a>
           <h1 className="headline">
-            Damir Harambasic{' '}
-            <span className="hidden-text">
-              Resume | Frontend Web Engineer
-            </span>
+            Damir Harambasic{" "}
+            <span className="hidden-text">Resume | Frontend Web Engineer</span>
             <span className="email-link">
               <a href="mailto:damir.hara@gmail.com">damir.hara@gmail.com</a>
             </span>
@@ -41,7 +39,9 @@ const Resume = () => {
           <div className="resume-summary">
             <h3 className="sub-headline">SUMMARY</h3>
             <p className="summary-paragraph">
-              Passionate and experienced Web Software Engineer who values clear communication, great design and creating pixel-perfect, high-performance web interactions.
+              Passionate and experienced Web Software Engineer who values clear
+              communication, great design and creating pixel-perfect,
+              high-performance web interactions.
             </p>
           </div>
         </header>
@@ -50,59 +50,66 @@ const Resume = () => {
             <h3 className="sub-headline">EXPERIENCE</h3>
             <ul className="job-wrapper">
               <h4>
-                Staff Software Engineer{' '}
-                <span className="span-light">@</span> Varo Bank
+                Staff Software Engineer <span className="span-light">@</span>{" "}
+                Varo Bank
               </h4>
               <h5>January 2020 - Present</h5>
               <li>
-                - Initially joined as a Senior Frontend Engineer and promoted to Staff Engineer in March 2024.
+                - Initially joined as a Senior Frontend Engineer and promoted to
+                Staff Engineer in March 2024.
               </li>
               <li>
-                - Currently working on the home page engagement team, although I tend to float around where ever I am needed.
+                - Currently working on the home page engagement team, although I
+                tend to float around where ever I am needed.
               </li>
               <li>
-                - Active member of the hiring committee, with a focus on mentoring incoming Engineers.
+                - Active member of the hiring committee, with a focus on
+                mentoring incoming Engineers.
               </li>
               <li>
-                - Previously worked across multiple projects and teams including: client banking, growth, engagement, internal tools and on our new design system.
+                - Previously worked across multiple projects and teams
+                including: client banking, growth, engagement, internal tools
+                and on our new design system.
               </li>
               <li>
-                - Some Technologies I am working with: TypeScript, React, GraphQL/Apollo, Storybook, and React Testing Library.
+                - Some Technologies I am working with: TypeScript, React, React
+                Native, GraphQL/Apollo, Storybook, and React Testing Library.
               </li>
             </ul>
 
             <ul className="job-wrapper">
               <h4>
-                Sr. Frontend Developer{' '}
-                <span className="span-light">@</span> Overstock.com
+                Sr. Frontend Developer <span className="span-light">@</span>{" "}
+                Overstock.com
               </h4>
               <h5>October 2019 - December 2019</h5>
               <li>
-                - Fixed bugs and built features on the Product Page in Node.js, Express, Webpack, Redux, and React.
+                - Fixed bugs and built features on the Product Page in Node.js,
+                Express, Webpack, Redux, and React.
               </li>
               <li>
-                - Rebuilt the Webpack Server-side Rendering portion of our NodeJS powered app.
+                - Rebuilt the Webpack Server-side Rendering portion of our
+                NodeJS powered app.
               </li>
-              <li>
-                - This was my brief second stint at Overstock.
-              </li>
+              <li>- This was my brief second stint at Overstock.</li>
             </ul>
 
             <ul className="job-wrapper">
               <h4>
-                Sr. Full-Stack Developer{' '}
-                <span className="span-light">@</span> tZERO
+                Sr. Full-Stack Developer <span className="span-light">@</span>{" "}
+                tZERO
               </h4>
               <h5>September 2018 - October 2019</h5>
               <li>
-                - Built the next generation Blockchain-based UI using React, Redux, Webpack, Express, Node.js, and PostgreSQL.
+                - Built the next generation Blockchain-based UI using React,
+                Redux, Webpack, Express, Node.js, and PostgreSQL.
               </li>
               <li>- Filled in for multiple temporary Dev Lead stints.</li>
             </ul>
 
             <ul className="job-wrapper">
               <h4>
-                Frontend Developer <span className="span-light">@</span>{' '}
+                Frontend Developer <span className="span-light">@</span>{" "}
                 Overstock.com
               </h4>
               <h5>October 2014 - September 2018</h5>
@@ -144,12 +151,11 @@ const Resume = () => {
 
             <ul className="job-wrapper">
               <h4>
-                Freelance Developer and Designer{' '}
+                Freelance Developer and Designer{" "}
                 <span className="span-light">@</span> Damir Hara Design
               </h4>
               <h5>March 2013 - &infin;</h5>
-              <li>
-              </li>
+              <li></li>
               <li>
                 - Helped companies/clients build websites and web apps from
                 scratch or by jumping in the middle of the project. I&apos;ve
@@ -169,14 +175,15 @@ const Resume = () => {
             <ul>
               <li className="main-skill">JavaScript</li>
               <li>React</li>
+              <li>React Native</li>
               <li>Redux</li>
               <li>TypeScript</li>
               <li>GraphQL (Apollo)</li>
               <li>RESTful API&apos;s</li>
               <li>React Testing Library</li>
               <li>Webpack</li>
-              <li className="cool-fact-container">Astro{' '}
-                <span className="cool-fact">Used on this site! 🚀</span>
+              <li className="cool-fact-container">
+                Astro <span className="cool-fact">Used on this site! 🚀</span>
               </li>
               <li>Next.js</li>
               <li>Node.js</li>
@@ -211,8 +218,12 @@ const Resume = () => {
           </section>
         </main>
         <footer className="footer">
-          <a className="footer-button" href="mailto:damir.hara@gmail.com">Get In Touch</a>
-          <a className="footer-button" href={resumePdf}>Download PDF</a>
+          <a className="footer-button" href="mailto:damir.hara@gmail.com">
+            Get In Touch
+          </a>
+          <a className="footer-button" href={resumePdf}>
+            Download PDF
+          </a>
         </footer>
       </section>
     </main>
