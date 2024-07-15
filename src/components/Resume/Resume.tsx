@@ -55,21 +55,21 @@ const Resume = () => {
               </h4>
               <h5>January 2020 - Present</h5>
               <li>
-                - Initially joined as a Senior Frontend Engineer and promoted to
-                Staff Engineer in March 2024.
-              </li>
-              <li>
-                - Currently working on the home page engagement team, although I
-                tend to float around where ever I am needed.
-              </li>
-              <li>
-                - Active member of the hiring committee, with a focus on
-                mentoring incoming Engineers.
+                - Currently helping rewrite the Varo Bank app from scratch in
+                React Native with Expo and TypeScript.
               </li>
               <li>
                 - Previously worked across multiple projects and teams
                 including: client banking, growth, engagement, internal tools
                 and on our new design system.
+              </li>
+              <li>
+                - Active member of the hiring committee, with a focus on
+                mentoring and onboarding incoming Engineers.
+              </li>
+              <li>
+                - Initially joined as a Senior Frontend Engineer and promoted to
+                Staff Engineer in March 2024.
               </li>
               <li>
                 - Some Technologies I am working with: TypeScript, React, React
