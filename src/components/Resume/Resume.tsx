@@ -39,9 +39,12 @@ const Resume = () => {
           <div className="resume-summary">
             <h3 className="sub-headline">SUMMARY</h3>
             <p className="summary-paragraph">
-              Passionate and experienced Web Software Engineer who values clear
-              communication, great design and creating pixel-perfect,
-              high-performance web interactions.
+              Passionate and experienced Web Software Engineer with 10 years of
+              expertise in creating pixel-perfect, high-performance web
+              products. Proven track record in leading projects, mentoring
+              teams, and driving innovation in web development. Adept at using
+              modern technologies like React, React Native, TypeScript, and
+              GraphQL to deliver robust and scalable applications.
             </p>
           </div>
         </header>
@@ -55,8 +58,8 @@ const Resume = () => {
               </h4>
               <h5>January 2020 - Present</h5>
               <li>
-                - Currently helping rewrite the Varo Bank app from scratch in
-                React Native with Expo and TypeScript.
+                - Currently helping with a complete rewrite of the Varo Bank app
+                using React Native with Expo and TypeScript.
               </li>
               <li>
                 - Previously worked across multiple projects and teams
@@ -64,8 +67,8 @@ const Resume = () => {
                 and on our new design system.
               </li>
               <li>
-                - Active member of the hiring committee, with a focus on
-                mentoring and onboarding incoming Engineers.
+                - Played a pivotal role in hiring, mentoring and onboarding new
+                engineers.
               </li>
               <li>
                 - Initially joined as a Senior Frontend Engineer and promoted to
@@ -210,11 +213,6 @@ const Resume = () => {
               <h4>University of Utah</h4>
               <h5>Class of 2014</h5>
               <li>BS, Mass Communication</li>
-            </ul>
-            <ul className="job-wrapper">
-              <h4>Salt Lake Community College</h4>
-              <h5>Class of 2011</h5>
-              <li>AS, General Studies</li>
             </ul>
           </section>
         </main>
