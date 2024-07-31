@@ -39,12 +39,12 @@ const Resume = () => {
           <div className="resume-summary">
             <h3 className="sub-headline">SUMMARY</h3>
             <p className="summary-paragraph">
-              Passionate and experienced Web Software Engineer with 10 years of
-              expertise in creating pixel-perfect, high-performance web
-              products. Proven track record in leading projects, mentoring
-              teams, and driving innovation in web development. Adept at using
-              modern technologies like React, React Native, TypeScript, and
-              GraphQL to deliver robust and scalable applications.
+              Passionate and experienced Software Engineer with a decade of
+              expertise in creating pixel-perfect, high-performance web and
+              native products. Passionate about clear communication, great
+              design, and delivering seamless user experiences. Skilled in
+              modern technologies like React, React Native, TypeScript, and GraphQL, with a
+              strong track record in leading projects and mentoring teams.
             </p>
           </div>
         </header>
