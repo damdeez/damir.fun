@@ -117,9 +117,10 @@ const Resume = () => {
               </h4>
               <h5>September 2018 - October 2019</h5>
               <li>
-                - Built the next generation Blockchain-based UI using React,
+                - Built a securities trading platform utilizing the blockchain using React,
                 Redux, Webpack, Express, Node.js, and PostgreSQL.
               </li>
+              <li>- Focused on Onboarding and KYC portion of the Web application, worked across the stack, from UI to database.</li>
               <li>- Filled in for multiple temporary Dev Lead stints.</li>
             </ul>
 
