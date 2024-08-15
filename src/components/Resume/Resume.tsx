@@ -43,8 +43,9 @@ const Resume = () => {
               expertise in creating pixel-perfect, high-performance web and
               native products. Passionate about clear communication, great
               design, and delivering seamless user experiences. Skilled in
-              modern technologies like React, React Native, TypeScript, and GraphQL, with a
-              strong track record in leading projects and mentoring teams.
+              modern technologies like React, React Native, TypeScript, and
+              GraphQL, with a strong track record in leading projects and
+              mentoring teams.
             </p>
           </div>
         </header>
@@ -62,9 +63,21 @@ const Resume = () => {
                 using React Native with Expo and TypeScript.
               </li>
               <li>
-                - Previously worked across multiple projects and teams
-                including: client banking, growth, engagement, internal tools
-                and on our new design system.
+                - Previously worked across multiple projects and teams, some highlights include:
+                <p className="highlights">
+                  * Lead the Web effort in building out our new Design System
+                </p>
+                <p className="highlights">
+                  * Integrating Statsig as our new feature and experiment
+                  platform
+                </p>
+                <p className="highlights">
+                  * Lead the Web efforts and promoted server-driven UI
+                  architectural pattern
+                </p>
+                <p className="highlights">
+                  * Integrated with Column Tax for tax prep purposes
+                </p>
               </li>
               <li>
                 - Played a pivotal role in hiring, mentoring and onboarding new

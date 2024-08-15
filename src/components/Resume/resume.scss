@@ -124,6 +124,12 @@
     line-height: 20px;
     list-style: none;
     text-decoration: none;
+
+    .highlights {
+      margin-left: 20px;
+      font-style: italic;
+      line-height: 18px;
+    }
     
     strong {
       font-weight: 700;
