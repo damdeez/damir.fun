@@ -63,21 +63,18 @@ const Resume = () => {
                 using React Native with Expo and TypeScript.
               </li>
               <li>
-                - Previously worked across multiple projects and teams, some highlights include:
-                <p className="highlights">
-                  * Lead the Web effort in building out our new Design System
-                </p>
-                <p className="highlights">
-                  * Integrating Statsig as our new feature and experiment
-                  platform
-                </p>
-                <p className="highlights">
-                  * Lead the Web efforts and promoted server-driven UI
-                  architectural pattern
-                </p>
-                <p className="highlights">
-                  * Integrated with Column Tax for tax prep purposes
-                </p>
+                - Previously worked across multiple projects and cross-functional teams, often at once.
+              </li>
+              <li>
+                - Lead the Web effort in building and advocating for our new Design System.
+              </li>
+              <li>
+                - Integrated Statsig as our new feature and experiment platform
+                and Column Tax for tax prep purposes.
+              </li>
+              <li>
+                - Lead the Web efforts and promoted server-driven UI
+                architectural pattern.
               </li>
               <li>
                 - Played a pivotal role in hiring, mentoring and onboarding new
@@ -89,7 +86,7 @@ const Resume = () => {
               </li>
               <li>
                 - Some Technologies I am working with: TypeScript, React, React
-                Native, GraphQL/Apollo, Storybook, and React Testing Library.
+                Native, GraphQL/Apollo, Node.js, Storybook, and React Testing Library.
               </li>
             </ul>
 
@@ -117,10 +114,13 @@ const Resume = () => {
               </h4>
               <h5>September 2018 - October 2019</h5>
               <li>
-                - Built a securities trading platform utilizing the blockchain using React,
-                Redux, Webpack, Express, Node.js, and PostgreSQL.
+                - Built a securities trading platform utilizing the blockchain
+                using React, Redux, Webpack, Express, Node.js, and PostgreSQL.
               </li>
-              <li>- Focused on Onboarding and KYC portion of the Web application, worked across the stack, from UI to database.</li>
+              <li>
+                - Focused on Onboarding and KYC portion of the Web application,
+                worked across the stack, from UI to database.
+              </li>
               <li>- Filled in for multiple temporary Dev Lead stints.</li>
             </ul>
 
@@ -130,14 +130,13 @@ const Resume = () => {
                 Overstock.com
               </h4>
               <h5>October 2014 - September 2018</h5>
-              <li className="italicize">Product Page Dev Team:</li>
               <li>
                 - Handled new feature implementation, A/B Tests, and bug
                 squishing on product pages.
               </li>
               <li>
                 - Worked on a full-stack Node.js, Express, React, Redux mobile
-                web app as well as various client-side repo&apos;s.
+                web app as well as various client-side repos.
               </li>
               <li>
                 - Was involved in the design process of product with UX and
@@ -152,17 +151,7 @@ const Resume = () => {
                 used by teams across Overstock.com.
               </li>
               <li>
-                - During this time I was promoted to Senior Frontend Developer.
-              </li>
-              <li className="italicize">Production Web Team:</li>
-              <li>
-                - Worked directly with Marketing, Product, and Back-end teams on
-                various projects concerning the homepage of Overstock.com.
-              </li>
-              <li>
-                - Handle initial front-end development, support and maintenance
-                for Overstock.com micro-sites, homepage content, and promotional
-                email/content/pages. Take part in QA and on-call when needed.
+                - During this time I was promoted to Senior Frontend Developer. Some previous teams I worked with: Marketing and Production web team.
               </li>
             </ul>
 
