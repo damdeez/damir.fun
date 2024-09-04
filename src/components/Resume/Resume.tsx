@@ -63,10 +63,12 @@ const Resume = () => {
                 using React Native with Expo and TypeScript.
               </li>
               <li>
-                - Previously worked across multiple projects and cross-functional teams, often at once.
+                - Previously worked across multiple projects and
+                cross-functional teams, often at once.
               </li>
               <li>
-                - Lead the Web effort in building and advocating for our new Design System.
+                - Lead the Web effort in building and advocating for our new
+                Design System.
               </li>
               <li>
                 - Integrated Statsig as our new feature and experiment platform
@@ -86,7 +88,8 @@ const Resume = () => {
               </li>
               <li>
                 - Some Technologies I am working with: TypeScript, React, React
-                Native, GraphQL/Apollo, Node.js, Storybook, and React Testing Library.
+                Native, GraphQL/Apollo, Node.js, Storybook, and React Testing
+                Library.
               </li>
             </ul>
 
@@ -151,7 +154,9 @@ const Resume = () => {
                 used by teams across Overstock.com.
               </li>
               <li>
-                - During this time I was promoted to Senior Frontend Developer. Some previous teams I worked with: Marketing and Production web team.
+                - During this time I was promoted to Senior Frontend Developer.
+                Some previous teams I worked with: Marketing and Production web
+                team.
               </li>
             </ul>
 
@@ -200,6 +205,7 @@ const Resume = () => {
               <li>SASS</li>
               <li>CSS Modules</li>
               <li>Responsive Web Design</li>
+              <li>Storybook</li>
               <li className="main-skill">Semantic HTML</li>
               <li>Git &amp; CLI chops</li>
               <li>Troubleshooting</li>
