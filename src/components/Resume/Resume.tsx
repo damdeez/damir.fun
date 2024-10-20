@@ -33,6 +33,11 @@ const Resume = () => {
               <a href="https://www.linkedin.com/in/damirharambasic">
                 linkedin.com/in/damir
                 <LinkSvg />
+              </a>{" "}
+              |{" "}
+              <a href="https://www.damir.fun">
+                www.damir.fun
+                <LinkSvg />
               </a>
             </span>
           </h1>
@@ -87,9 +92,9 @@ const Resume = () => {
                 Staff Engineer in March 2024.
               </li>
               <li>
-                - <strong>Some technologies I am working with</strong>: TypeScript,
-                React, React Native, GraphQL, Node.js, Storybook, Figma and
-                React Testing Library.
+                - <strong>Some technologies I am working with</strong>:
+                TypeScript, React, React Native, GraphQL, Node.js, Storybook,
+                Figma and React Testing Library.
               </li>
             </ul>
 
@@ -234,10 +239,10 @@ const Resume = () => {
         </main>
         <footer className="footer">
           <a className="footer-button" href="mailto:damir.hara@gmail.com">
-            Get In Touch
+            📧 Get In Touch
           </a>
           <a className="footer-button" href={resumePdf}>
-            Download PDF
+            💾 Download PDF
           </a>
         </footer>
       </section>
