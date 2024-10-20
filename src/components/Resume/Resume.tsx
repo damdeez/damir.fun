@@ -40,12 +40,11 @@ const Resume = () => {
             <h3 className="sub-headline">SUMMARY</h3>
             <p className="summary-paragraph">
               Passionate and experienced Software Engineer with a decade of
-              expertise in creating pixel-perfect, high-performance web and
+              expertise in creating high-quality, high-performance web and
               native products. Passionate about clear communication, great
-              design, and delivering seamless user experiences. Skilled in
-              modern technologies like React, React Native, TypeScript, and
-              GraphQL, with a strong track record in leading projects and
-              mentoring teams.
+              design, and delivering seamless UX. Skilled in modern technologies
+              like React, React Native, TypeScript, and GraphQL, with a strong
+              track record in leading projects and mentoring teams.
             </p>
           </div>
         </header>
@@ -71,8 +70,9 @@ const Resume = () => {
                 Design System.
               </li>
               <li>
-                - Integrated Statsig as our new feature and experiment platform
-                and Column Tax for tax prep purposes.
+                - Integrated with 3rd party services such as Statsig as our new
+                feature and experiment platform and Column Tax for tax prep
+                purposes.
               </li>
               <li>
                 - Lead the Web efforts and promoted server-driven UI
@@ -87,9 +87,9 @@ const Resume = () => {
                 Staff Engineer in March 2024.
               </li>
               <li>
-                - Some Technologies I am working with: TypeScript, React, React
-                Native, GraphQL/Apollo, Node.js, Storybook, and React Testing
-                Library.
+                - <strong>Some technologies I am working with</strong>: TypeScript,
+                React, React Native, GraphQL, Node.js, Storybook, Figma and
+                React Testing Library.
               </li>
             </ul>
 
@@ -99,15 +99,14 @@ const Resume = () => {
                 Overstock.com
               </h4>
               <h5>October 2019 - December 2019</h5>
-              <li>
-                - Fixed bugs and built features on the Product Page in Node.js,
-                Express, Webpack, Redux, and React.
-              </li>
-              <li>
-                - Rebuilt the Webpack Server-side Rendering portion of our
-                NodeJS powered app.
-              </li>
               <li>- This was my brief second stint at Overstock.</li>
+              <li>
+                - Fixed bugs and built features on the product details page.
+              </li>
+              <li>
+                - <strong>Some technologies I worked with</strong>: Node.js,
+                Express, Webpack, Redux and React.
+              </li>
             </ul>
 
             <ul className="job-wrapper">
@@ -117,14 +116,18 @@ const Resume = () => {
               </h4>
               <h5>September 2018 - October 2019</h5>
               <li>
-                - Built a securities trading platform utilizing the blockchain
-                using React, Redux, Webpack, Express, Node.js, and PostgreSQL.
+                - Built a securities trading platform greenfield project on the
+                blockchain.
               </li>
               <li>
                 - Focused on Onboarding and KYC portion of the Web application,
                 worked across the stack, from UI to database.
               </li>
               <li>- Filled in for multiple temporary Dev Lead stints.</li>
+              <li>
+                - <strong>Some technologies I worked with</strong>: React,
+                Redux, Node.js, Express, PostgreSQL, Jest and Webpack.
+              </li>
             </ul>
 
             <ul className="job-wrapper">
@@ -138,8 +141,8 @@ const Resume = () => {
                 squishing on product pages.
               </li>
               <li>
-                - Worked on a full-stack Node.js, Express, React, Redux mobile
-                web app as well as various client-side repos.
+                - Worked on a full-stack mobile web app as well as various
+                client-side apps.
               </li>
               <li>
                 - Was involved in the design process of product with UX and
@@ -150,13 +153,17 @@ const Resume = () => {
                 ES6 support and ReactJS into our repo.
               </li>
               <li>
-                - Created reusable React components and NPM modules that are
+                - Created reusable React components and NPM modules that were
                 used by teams across Overstock.com.
               </li>
               <li>
                 - During this time I was promoted to Senior Frontend Developer.
                 Some previous teams I worked with: Marketing and Production web
                 team.
+              </li>
+              <li>
+                - <strong>Some technologies I worked with</strong>: jQuery,
+                Node.js, Express, Webpack, Redux and React.
               </li>
             </ul>
 
@@ -171,7 +178,7 @@ const Resume = () => {
                 - Helped companies/clients build websites and web apps from
                 scratch or by jumping in the middle of the project. I&apos;ve
                 worked on everything from simple one-page static websites to
-                production React apps served to millions of people.
+                production React apps served to millions of customers.
               </li>
               <li>
                 <strong>Clients worked with:</strong> Infowrap.com, Cottonwood
