@@ -1,7 +1,7 @@
-@import '../../styles/variables.scss';
+@use '../../styles/variables';
 
 .built-with {
-  color: $color3;
+  color: variables.$color3;
   border-radius: 4px;
   padding: 2px 4px;
   font-size: 13px;
@@ -10,10 +10,10 @@
   right: 40px;
 
   a {
-    color: $color3;
+    color: variables.$color3;
   }
 
-  @media screen and (max-width: $mobile) {
+  @media screen and (max-width: variables.$mobile) {
     left: 44px;
     // For now:
     display: none;

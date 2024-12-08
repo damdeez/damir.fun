@@ -1,9 +1,9 @@
-@import '../../styles/variables.scss';
+@use '../../styles/variables';
 
 .resume {
-  background-color: $white;
-  color: $color1;
-  font-family: $inconsolata-font-family;
+  background-color: variables.$white;
+  color: variables.$color1;
+  font-family: variables.$inconsolata-font-family;
   width: 100%;
 }
 
@@ -19,7 +19,7 @@
 }
 
 .sub-headline {
-  border-bottom: 1px solid $color1;
+  border-bottom: 1px solid variables.$color1;
   display: inline-block;
   font-weight: 600;
   font-size: 14px;
@@ -35,11 +35,11 @@ h1.headline {
   vertical-align: top;
 
   a {
-    color: $color1;
+    color: variables.$color1;
     text-decoration: none;
 
     &:hover {
-      color: $color2;
+      color: variables.$color2;
       text-decoration: underline;
     }
   }
@@ -71,7 +71,7 @@ h1.headline {
 }
 
 .resume-img {
-  border: 2px solid $color1;
+  border: 2px solid variables.$color1;
   border-radius: 25%;
   display: inline-block;
   max-width: 100px;
@@ -146,11 +146,11 @@ h1.headline {
 }
 
 .job-link {
-  color: $color1;
+  color: variables.$color1;
   text-decoration: none;
 
   &:hover {
-    color: $color2;
+    color: variables.$color2;
     text-decoration: underline;
   }
 }
@@ -170,8 +170,8 @@ h1.headline {
   }
   
   li {
-    background-color: $color1;
-    color: $white;
+    background-color: variables.$color1;
+    color: variables.$white;
     border-radius: 4px;
     padding: 2px 4px;
     display: flex;
@@ -179,8 +179,8 @@ h1.headline {
     gap: 6px;
 
     &.main-skill {
-      color: $black;
-      background-color: $color3;
+      color: variables.$black;
+      background-color: variables.$color3;
       font-weight: 600;
     }
   }
@@ -192,7 +192,7 @@ h1.headline {
 
 .cool-fact {
   padding: 1px 4px;
-  background-color: $color2;
+  background-color: variables.$color2;
   border-radius: 0 4px 4px 0;
   display: flex;
   align-items: center;
@@ -207,17 +207,17 @@ h1.headline {
 }
 
 .footer-button {
-  border: 2px solid $color5;
+  border: 2px solid variables.$color5;
   border-radius: 3px;
-  color: $color5;
+  color: variables.$color5;
   font-size: 12px;
   font-weight: 700;
   padding: 10px 30px;
   text-decoration: none;
 
   &:hover {
-    background: $color5;
-    color: $white;
+    background: variables.$color5;
+    color: variables.$white;
   }
 }
 
@@ -234,9 +234,9 @@ h1.headline {
 
   .skills-pill-container {
     li {
-      background-color: $white;
-      border: 1px solid $black;
-      color: $black;
+      background-color: variables.$white;
+      border: 1px solid variables.$black;
+      color: variables.$black;
       font-size: 14px;
     }
   }
@@ -258,7 +258,7 @@ h1.headline {
   }
 }
 
-@media screen and (max-width: $mobile) {
+@media screen and (max-width: variables.$mobile) {
   .resume-container {
     width: 90%;
   }

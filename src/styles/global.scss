@@ -1,6 +1,6 @@
 // Imports
-@import url('https://fonts.googleapis.com/css?family=Inconsolata:300,400,700');
-@import '../styles/variables.scss';
+@use '../styles/variables';
+@import 'https://fonts.googleapis.com/css?family=Inconsolata:300,400,700';
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -112,8 +112,8 @@ section {
 }
 
 body {
-  background-color: $black;
-  font-family: $inconsolata-font-family;
+  background-color: variables.$black;
+  font-family: variables.$inconsolata-font-family;
   line-height: 1;
   margin: 0;
   display: flex;
@@ -145,8 +145,8 @@ table {
 // End CSS Reset
 
 .main-page-content {
-  background-color: $black;
-  color: $white;
+  background-color: variables.$black;
+  color: variables.$white;
   display: flex;
   flex-direction: column;
   padding: 60px 40px 0;
@@ -159,20 +159,20 @@ table {
     margin: 10px 0;
 
     a {
-      color: $color5;
+      color: variables.$color5;
     }
   }
 
-  @media screen and (max-width: $mobile) {
+  @media screen and (max-width: variables.$mobile) {
     padding: 40px 20px;
     justify-content: flex-start;
   }
 }
 
 .back-link {
-  border: 2px solid $white;
+  border: 2px solid variables.$white;
   border-radius: 3px;
-  color: $white;
+  color: variables.$white;
   font-size: 12px;
   font-weight: 700;
   padding: 10px 30px;
@@ -180,12 +180,8 @@ table {
   margin-top: 40px;
 
   &:hover {
-    background: $white;
-    color: $color5;
+    background: variables.$white;
+    color: variables.$color5;
     cursor: pointer;
-    
-    // &:after {
-    //   content: '🫐';
-    // }
   }
 }

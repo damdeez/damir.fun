@@ -1,4 +1,4 @@
-@import '../../styles/variables.scss';
+@use '../../styles/variables';
 
 @keyframes blink {  
   0% { 
@@ -15,7 +15,7 @@
   display: flex;
   flex-direction: column;
   
-  @media screen and (max-width: $mobile) {
+  @media screen and (max-width: variables.$mobile) {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -25,8 +25,8 @@
 .main-text {
   h1,
   h2 {
-    color: $white;
-    font-family: $inconsolata-font-family;
+    color: variables.$white;
+    font-family: variables.$inconsolata-font-family;
     margin: 0 0 20px 0;
   }
 
@@ -43,7 +43,7 @@
       font-size: 36px;
     }
 
-    @media screen and (max-width: $mobile) {
+    @media screen and (max-width: variables.$mobile) {
       font-size: 28px;
       text-align: left;
     }
@@ -59,14 +59,14 @@
     line-height: 30px;
     font-weight: 300;
 
-    @media screen and (max-width: $mobile) {
+    @media screen and (max-width: variables.$mobile) {
       font-size: 18px;
       text-align: left;
       margin-left: 24px;
     }
     
     a {
-      color: $color5;
+      color: variables.$color5;
       font-weight: 600;
       font-size: 12.5px;
       text-decoration: none;
@@ -79,46 +79,46 @@
       padding: 2px 4px;
 
       &:nth-child(1) {
-        background-color: $white;
+        background-color: variables.$white;
       }
 
       &:nth-child(2) {
-        background-color: $color2;
+        background-color: variables.$color2;
 
         &:hover {
-          background-color: $color5;
+          background-color: variables.$color5;
         }
       }
 
       &:nth-child(3) {
-        background-color: $color3;
+        background-color: variables.$color3;
 
         &:hover {
-          background-color: $color4;
+          background-color: variables.$color4;
         }
       }
 
       &:nth-child(4) {
-        background-color: $color4;
+        background-color: variables.$color4;
         
         &:hover {
-          background-color: $color3;
+          background-color: variables.$color3;
         }
       }
 
       &:nth-child(5) {
-        background-color: $color5;
+        background-color: variables.$color5;
 
         &:hover {
-          background-color: $color2;
+          background-color: variables.$color2;
         }
       }
 
       &:nth-child(6) {
-        background-color: $color2;
+        background-color: variables.$color2;
         
         &:hover {
-          background-color: $white;
+          background-color: variables.$white;
         }
       }
   
@@ -133,7 +133,7 @@
   font-size: 48px;
   font-weight: 600;
 
-  @media screen and (max-width: $mobile) {
+  @media screen and (max-width: variables.$mobile) {
     font-size: 28px;
     text-align: left;
   }
@@ -145,15 +145,15 @@
 }
 
 .damir-img {
-  border: 3px solid $white;
-  outline: 3px solid $color2;
+  border: 3px solid variables.$white;
+  outline: 3px solid variables.$color2;
   border-radius: 25%;
   margin: 0 0 40px 0;
   width: 160px;
   height: 160px;
   align-self: flex-start;
 
-  @media screen and (max-width: $mobile) {
+  @media screen and (max-width: variables.$mobile) {
     margin-left: 24px;
   }
 }

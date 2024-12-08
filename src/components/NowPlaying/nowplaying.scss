@@ -1,4 +1,4 @@
-@import '../../styles/variables.scss';
+@use '../../styles/variables';
 
 .now-playing {
   align-items: center;
@@ -9,7 +9,7 @@
   justify-content: flex-start;
   align-self: flex-start;
 
-  @media screen and (max-width: $mobile) {
+  @media screen and (max-width: variables.$mobile) {
     height: auto;
     margin-left: 24px;
   }
@@ -20,7 +20,7 @@
   margin: 0 8px;
   width: 40px;
 
-  @media screen and (max-width: $mobile) {
+  @media screen and (max-width: variables.$mobile) {
     margin: 0 8px 0 0;
   }
 }
@@ -39,7 +39,7 @@
   margin: 0 1px 0;
 }
 
-@media screen and (max-width: $mobile) {  
+@media screen and (max-width: variables.$mobile) {  
   .now-listening {
     flex: 1 0 100%;
     margin: 10px 0;
