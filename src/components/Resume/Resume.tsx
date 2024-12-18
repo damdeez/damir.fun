@@ -67,21 +67,22 @@ const Resume = () => {
                 using React Native with Expo and TypeScript.
               </li>
               <li>
+                - I lead a small team of 3-4 engineers working on new features,
+                bug squashing and making sure our code is well tested.
+              </li>
+              <li>
                 - Previously worked across multiple projects and
                 cross-functional teams, often at once.
               </li>
               <li>
-                - Lead the Web effort in building and advocating for our new
-                Design System.
+                - Led the Web effort in building and advocating for our new
+                Design System and promoted server-driven UI (SDUI) architectural
+                pattern.
               </li>
               <li>
                 - Integrated with 3rd party services such as Statsig as our new
                 feature and experiment platform and Column Tax for tax prep
                 purposes.
-              </li>
-              <li>
-                - Lead the Web efforts and promoted server-driven UI
-                architectural pattern.
               </li>
               <li>
                 - Played a pivotal role in hiring, mentoring and onboarding new
@@ -233,7 +234,7 @@ const Resume = () => {
             <ul className="job-wrapper">
               <h4>University of Utah</h4>
               <h5>Class of 2014</h5>
-              <li>BS, Mass Communication</li>
+              <li>BS, Strategic Communication</li>
             </ul>
           </section>
         </main>
