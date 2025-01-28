@@ -1,0 +1,1 @@
+export const pageTitle = "Software Engineer and Developer";

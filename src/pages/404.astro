@@ -1,8 +1,9 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { pageTitle } from '../constants/strings';
 import '../styles/global.scss';
 ---
 
-<Layout title="damir.fun | 404 | Web Software Engineer and Developer">
+<Layout title={"damir.fun | 404 | " + pageTitle}>
 	<main class="main-page-content">Whoops! Can't find that, dingleberry 🫐 <a href="/" class="back-link">Help!</a></main>
 </Layout>

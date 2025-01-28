@@ -4,9 +4,10 @@ import '../styles/global.scss';
 import Intro from '../components/Intro/Intro'
 import NowPlaying from '../components/NowPlaying/NowPlaying';
 import BuiltWith from '../components/BuiltWith/BuiltWith';
+import { pageTitle } from '../constants/strings';
 ---
 
-<Layout title="damir.fun | Web Software Engineer and Developer">
+<Layout title={"damir.fun | Resume | " + pageTitle}>
 	<main class="main-page-content">
 		<Intro />
 		<NowPlaying client:load />

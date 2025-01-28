@@ -1,9 +1,10 @@
 ---
+import { pageTitle } from '../constants/strings';
 import Layout from '../layouts/Layout.astro';
 import '../styles/global.scss';
 import ResumePage from '../components/Resume/Resume';
 ---
 
-<Layout title="damir.fun | resume | Web Software Engineer and Developer">
+<Layout title={"damir.fun | Resume | " + pageTitle}>
 	<ResumePage />
 </Layout>
