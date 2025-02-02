@@ -1,6 +1,6 @@
 /* eslint-disable max-len */
 import './resume.scss';
-import resumePdf from '/DamirResume2024.pdf';
+import resumePdf from '/DamirResume2025.pdf';
 
 const LinkSvg = () => (
   <svg
@@ -25,7 +25,7 @@ const Resume = () => {
           </a>
           <h1 className="headline">
             Damir Harambasic{" "}
-            <span className="hidden-text">Resume | Frontend Web Engineer</span>
+            <span className="hidden-text">Resume | Product Software Engineer</span>
             <span className="email-link">
               <a href="mailto:damir.hara@gmail.com">damir.hara@gmail.com</a>
             </span>
