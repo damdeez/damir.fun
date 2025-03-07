@@ -10,7 +10,6 @@ const Intro = () => (
         products. You can check out my <a href="/resume">resume</a> 👈 here. You
         can also find me on these social mediums:{" "}
         <a href="https://github.com/damdeez">Github</a>,{" "}
-        <a href="https://twitter.com/damdeez">Twitter</a>,{" "}
         <a href="https://www.linkedin.com/in/damirharambasic">LinkedIn</a>, or
         feel free to send me a good ol&apos;{" "}
         <a href="mailto:damir.hara@gmail.com">email</a>. ☕️

@@ -8,8 +8,8 @@ const LinkSvg = () => (
     focusable="false"
     aria-hidden="true"
     viewBox="0 0 24 24"
-    height="20"
-    width="20"
+    height="18"
+    width="18"
   >
     <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z" />
   </svg>
@@ -25,9 +25,12 @@ const Resume = () => {
           </a>
           <h1 className="headline">
             Damir Harambasic{" "}
-            <span className="hidden-text">Resume | Product Software Engineer</span>
+            <span className="hidden-text">
+              Resume | Product Software Engineer
+            </span>
             <span className="email-link">
-              <a href="mailto:damir.hara@gmail.com">damir.hara@gmail.com</a>
+              <a href="mailto:damir.hara@gmail.com">damir.hara@gmail.com</a> |{" "}
+              <a className="phone-link" href="tel:18018654342">1(801) 865-4342</a>
             </span>
             <span className="link">
               <a href="https://www.linkedin.com/in/damirharambasic">
