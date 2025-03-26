@@ -1,6 +1,6 @@
 /* eslint-disable max-len */
-import './resume.scss';
-import resumePdf from '/DamirResume2025.pdf';
+import "./resume.scss";
+import resumePdf from "/DamirResume2025.pdf";
 
 const LinkSvg = () => (
   <svg
@@ -30,7 +30,9 @@ const Resume = () => {
             </span>
             <span className="email-link">
               <a href="mailto:damir.hara@gmail.com">damir.hara@gmail.com</a> |{" "}
-              <a className="phone-link" href="tel:18018654342">1(801) 865-4342</a>
+              <a className="phone-link" href="tel:18018654342">
+                +1(801) 865-4342
+              </a>
             </span>
             <span className="link">
               <a href="https://www.linkedin.com/in/damirharambasic">
@@ -66,19 +68,23 @@ const Resume = () => {
               </h4>
               <h5>January 2020 - Present</h5>
               <li>
-                - Currently helping with a complete rewrite of the Varo Bank app
-                using React Native with Expo and TypeScript.
+                - Currently working on our Lending products, focusing on new
+                features and improvements.
               </li>
               <li>
-                - I lead a small team of 3-4 engineers working on new features,
-                bug squashing and making sure our code is well tested.
+                - Helped with a complete rewrite of the Varo Bank app using
+                React Native with Expo and TypeScript.
+              </li>
+              <li>
+                - Led a small team of 3-4 engineers working on rewriting
+                features, bug squashing and making sure our code is well tested.
               </li>
               <li>
                 - Previously worked across multiple projects and
                 cross-functional teams, often at once.
               </li>
               <li>
-                - Led the Web effort in building and advocating for our new
+                - Led the effort in building and advocating for our new
                 Design System and promoted server-driven UI (SDUI) architectural
                 pattern.
               </li>
@@ -97,8 +103,8 @@ const Resume = () => {
               </li>
               <li>
                 - <strong>Some technologies I am working with</strong>:
-                TypeScript, React, React Native, GraphQL, Node.js, Storybook,
-                Figma and React Testing Library.
+                TypeScript, React, React Native, GraphQL, Kotlin, PostgreSQL,
+                Node.js, Storybook, Figma and React Testing Library.
               </li>
             </ul>
 
@@ -190,7 +196,7 @@ const Resume = () => {
                 production React apps served to millions of customers.
               </li>
               <li>
-                <strong>Clients worked with:</strong> Infowrap.com, Cottonwood
+                <strong>Clients worked with:</strong> tZERO, Infowrap.com, Cottonwood
                 Electric, TheChapelMotorcycleShop.com.
               </li>
             </ul>
