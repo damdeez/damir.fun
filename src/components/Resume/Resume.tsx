@@ -49,12 +49,12 @@ const Resume = () => {
           <div className="resume-summary">
             <h3 className="sub-headline">SUMMARY</h3>
             <p className="summary-paragraph">
-              Passionate and experienced Software Engineer with a decade of
-              expertise in creating high-quality, high-performance web and
-              native products. Passionate about clear communication, great
-              design, and delivering seamless UX. Skilled in modern technologies
-              like React, React Native, TypeScript, and GraphQL, with a strong
-              track record in leading projects and mentoring teams.
+              Product Software Engineer with a 10+ years of expertise in
+              creating high-quality, high-performance web and native products.
+              Passionate about blending technical know-how with intuitive design
+              to create a great UX. Skilled in modern technologies like React,
+              React Native, TypeScript, and GraphQL, with a strong track record
+              in leading projects and mentoring teams.
             </p>
           </div>
         </header>
@@ -84,8 +84,8 @@ const Resume = () => {
                 cross-functional teams, often at once.
               </li>
               <li>
-                - Led the effort in building and advocating for our new
-                Design System and promoted server-driven UI (SDUI) architectural
+                - Led the effort in building and advocating for our new Design
+                System and promoted server-driven UI (SDUI) architectural
                 pattern.
               </li>
               <li>
@@ -196,8 +196,8 @@ const Resume = () => {
                 production React apps served to millions of customers.
               </li>
               <li>
-                <strong>Clients worked with:</strong> tZERO, Infowrap.com, Cottonwood
-                Electric, TheChapelMotorcycleShop.com.
+                <strong>Clients worked with:</strong> tZERO, Infowrap.com,
+                Cottonwood Electric, TheChapelMotorcycleShop.com.
               </li>
             </ul>
           </section>
@@ -232,10 +232,11 @@ const Resume = () => {
               <li>Git &amp; CLI chops</li>
               <li>Troubleshooting</li>
               <li>Wireframing &amp; Prototyping</li>
-              <li>Cross-browser compatibility</li>
+              <li>Cross-platform compatibility</li>
               <li>Communication &amp; Liaison</li>
               <li>Web Accessibility</li>
               <li>Mentoring &amp; Advising</li>
+              <li>Leadership</li>
             </ul>
           </section>
           <section className="education-container">
