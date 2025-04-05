@@ -53,7 +53,7 @@ const Resume = () => {
               creating high-quality, high-performance web and native products.
               Passionate about blending technical know-how with intuitive design
               to create a great UX. Skilled in modern technologies like React,
-              React Native, TypeScript, and GraphQL, with a strong track record
+              React Native, TypeScript, Node.js and GraphQL, with a strong track record
               in leading projects and mentoring teams.
             </p>
           </div>
