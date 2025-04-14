@@ -85,13 +85,12 @@ const Resume = () => {
               </li>
               <li>
                 - Led the effort in building and advocating for our new Design
-                System and promoted server-driven UI (SDUI) architectural
+                System and promoted server-driven UI architectural
                 pattern.
               </li>
               <li>
-                - Integrated with 3rd party services such as Statsig as our new
-                feature and experiment platform and Column Tax for tax prep
-                purposes.
+                - Integrated with 3rd party services such as Statsig as our
+                feature and experiment platform and Column Tax for tax prep.
               </li>
               <li>
                 - Played a pivotal role in hiring, mentoring and onboarding new
@@ -103,7 +102,7 @@ const Resume = () => {
               </li>
               <li>
                 - <strong>Some technologies I am working with</strong>:
-                TypeScript, React, React Native, GraphQL, Kotlin, PostgreSQL,
+                TypeScript, React, React Native, GraphQL, Express, PostgreSQL,
                 Node.js, Storybook, Figma and React Testing Library.
               </li>
             </ul>
