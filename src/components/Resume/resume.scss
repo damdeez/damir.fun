@@ -1,4 +1,4 @@
-@use '../../styles/variables';
+@use "../../styles/variables";
 
 .resume {
   background-color: variables.$white;
@@ -12,25 +12,32 @@
   max-width: 920px;
   padding: 20px 0;
   width: 70%;
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
   margin-bottom: 25px;
+  display: grid;
+  grid-template-columns: 180px auto;
+  gap: 20px;
 }
 
 .sub-headline {
-  border-bottom: 1px solid variables.$color1;
+  // border-bottom: 1px solid variables.$color1;
   display: inline-block;
   font-weight: 600;
   font-size: 14px;
   text-transform: uppercase;
-  margin: 20px 0;
-  padding: 0 0 5px;
+  margin: 0 0 10px;
+  // padding: 0 0 5px;
 }
 
 h1.headline {
+  border-bottom: 0.5px solid variables.$color1;
   display: inline-block;
-  font-size: 36px;
+  font-size: 20px;
+  font-weight: 700;
   margin: 5px 0 0 20px;
   vertical-align: top;
 
@@ -51,38 +58,32 @@ h1.headline {
   top: -9999px;
 }
 
-.email-link,
-.link {
+.links {
   display: block;
-  font-size: 22px;
-  font-weight: normal;
-  margin: 5px 0;
-}
-
-.phone-link {
-  font-size: 20px;
-}
-
-.link svg {
-  margin-left: 5px;
-  margin-bottom: -3px;
+  font-size: 14px;
+  font-weight: 700;
+  margin: 10px 0;
+  display: flex;
+  gap: 10px;
+  align-items: flex-end;
 }
 
 .summary-paragraph {
-  font-size: 16px;
+  font-size: 14px;
+  font-weight: 400;
   line-height: 18px;
   margin: 0 0 5px;
+  // font-family: variables.$calibri-font-family;
 }
 
 .resume-img {
   border: 2px solid variables.$color1;
-  border-radius: 25%;
+  border-radius: 10px;
   display: inline-block;
-  max-width: 100px;
   min-height: 90px;
   min-width: 90px;
   padding: 2px;
-  width: 15%;
+  width: 100%;
 }
 
 .main-section {
@@ -134,7 +135,7 @@ h1.headline {
       font-style: italic;
       line-height: 18px;
     }
-    
+
     strong {
       font-weight: 700;
     }
@@ -166,13 +167,13 @@ h1.headline {
 
 .skills-pill-container {
   margin-top: 25px;
-  
+
   ul {
     display: flex;
     flex-wrap: wrap;
     gap: 4px;
   }
-  
+
   li {
     background-color: variables.$color1;
     color: variables.$white;
@@ -266,17 +267,10 @@ h1.headline {
   .resume-container {
     width: 90%;
   }
-  .email-link,
-  .phone-link,
-  .link {
+
+  .links {
     font-size: 16px;
-    
-    svg {
-      height: 14px;
-      width: 14px;
-    }
   }
-  
 
   h1.headline {
     font-size: 32px;
