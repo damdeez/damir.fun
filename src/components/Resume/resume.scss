@@ -4,7 +4,6 @@
   background-color: variables.$white;
   color: variables.$color1;
   font-family: variables.$inconsolata-font-family;
-  width: 100%;
 }
 
 .resume-container {
@@ -24,13 +23,11 @@
 }
 
 .sub-headline {
-  // border-bottom: 1px solid variables.$color1;
   display: inline-block;
   font-weight: 600;
   font-size: 14px;
   text-transform: uppercase;
   margin: 0 0 10px;
-  // padding: 0 0 5px;
 }
 
 h1.headline {
@@ -73,7 +70,6 @@ h1.headline {
   font-weight: 400;
   line-height: 18px;
   margin: 0 0 5px;
-  // font-family: variables.$calibri-font-family;
 }
 
 .resume-img {
@@ -265,7 +261,7 @@ h1.headline {
 
 @media screen and (max-width: variables.$mobile) {
   .resume-container {
-    width: 90%;
+    width: 100%;
   }
 
   .links {
