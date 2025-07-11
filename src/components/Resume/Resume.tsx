@@ -53,8 +53,8 @@ const Resume = () => {
               creating high-quality, high-performance web and native products.
               Passionate about blending technical know-how with intuitive design
               to create a great UX. Skilled in modern technologies like React,
-              React Native, TypeScript, Node.js and GraphQL, with a strong track record
-              in leading projects and mentoring teams.
+              React Native, TypeScript, Node.js and GraphQL, with a strong track
+              record in leading projects and mentoring teams.
             </p>
           </div>
         </header>
@@ -69,40 +69,42 @@ const Resume = () => {
               <h5>January 2020 - Present</h5>
               <li>
                 - Currently working on our Lending products, focusing on new
-                features and improvements.
-              </li>
-              <li>
-                - Helped with a complete rewrite of the Varo Bank app using
-                React Native with Expo and TypeScript.
-              </li>
-              <li>
-                - Led a small team of 3-4 engineers working on rewriting
-                features, bug squashing and making sure our code is well tested.
+                features and improvements in a push for profitability.
               </li>
               <li>
                 - Previously worked across multiple projects and
                 cross-functional teams, often at once.
               </li>
               <li>
-                - Led the effort in building and advocating for our new Design
-                System and promoted server-driven UI architectural
-                pattern.
+                - Initially joined as a Senior Frontend Engineer and promoted to
+                Staff Engineer in March 2024.
+              </li>
+              <li>
+                <strong>Key contributions:</strong>
+              </li>
+              <li>
+                - Helped with a complete rewrite of the Varo Bank app using
+                React Native with Expo and TypeScript.
+              </li>
+              <li>
+                - Led a team of 3-4 engineers and owned the rewrite of the settings page and
+                related sub-pages in React Native.
               </li>
               <li>
                 - Integrated with 3rd party services such as Statsig as our
                 feature and experiment platform and Column Tax for tax prep.
               </li>
               <li>
+                - Led the effort in building and advocating for our new Design
+                System and promoted server-driven UI architectural pattern.
+              </li>
+              <li>
                 - Played a pivotal role in hiring, mentoring and onboarding new
                 engineers.
               </li>
               <li>
-                - Initially joined as a Senior Frontend Engineer and promoted to
-                Staff Engineer in March 2024.
-              </li>
-              <li>
                 - <strong>Some technologies I am working with</strong>:
-                TypeScript, React, React Native, GraphQL, Express, PostgreSQL,
+                TypeScript, React, React Native, GraphQL, Fastify, PostgreSQL,
                 Node.js, Storybook, Figma and React Testing Library.
               </li>
             </ul>
