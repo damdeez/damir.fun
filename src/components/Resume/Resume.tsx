@@ -24,12 +24,12 @@ const Resume = () => {
             <img src="/images/damir.jpg" className="resume-img" alt="Damir" />
           </a>
           <h1 className="headline">
-            Damir Harambasic{" "}
+            Damir Harambasic
             <span className="hidden-text">
               Resume | Product Software Engineer
             </span>
             <span className="email-link">
-              <a href="mailto:damir.hara@gmail.com">damir.hara@gmail.com</a> |{" "}
+              <a href="mailto:damir.hara@gmail.com">damir.hara@gmail.com</a> |
               <a className="phone-link" href="tel:18018654342">
                 +1(801) 865-4342
               </a>
@@ -38,8 +38,8 @@ const Resume = () => {
               <a href="https://www.linkedin.com/in/damirharambasic">
                 linkedin.com/in/damir
                 <LinkSvg />
-              </a>{" "}
-              |{" "}
+              </a>
+              |
               <a href="https://www.damir.fun">
                 www.damir.fun
                 <LinkSvg />
@@ -63,7 +63,7 @@ const Resume = () => {
             <h3 className="sub-headline">EXPERIENCE</h3>
             <ul className="job-wrapper">
               <h4>
-                Staff Software Engineer <span className="span-light">@</span>{" "}
+                Staff Software Engineer <span className="span-light">@</span>
                 Varo Bank
               </h4>
               <h5>January 2020 - Present</h5>
@@ -84,26 +84,44 @@ const Resume = () => {
               </li>
               <li>
                 - Helped with a complete rewrite of the Varo Bank app using
-                React Native with Expo and TypeScript.
-              </li>
-              <li>
-                - Led a team of 3-4 engineers and owned the rewrite of the settings page and
-                related sub-pages in React Native.
-              </li>
-              <li>
-                - Integrated with 3rd party services such as Statsig as our
-                feature and experiment platform and Column Tax for tax prep.
-              </li>
-              <li>
-                - Led the effort in building and advocating for our new Design
-                System and promoted server-driven UI architectural pattern.
-              </li>
-              <li>
-                - Played a pivotal role in hiring, mentoring and onboarding new
+                React Native with Expo and TypeScript. This streamlined
+                development workflows and sped up feature delivery by ~3×,
+                reducing the need from 3–4 engineers per feature to just 1–2
                 engineers.
               </li>
               <li>
-                - <strong>Some technologies I am working with</strong>:
+                - During the first part of the rebuild, led the Design System
+                2.0 initiative, built components from scratch using React Native
+                primitives, Storybook, and Chromatic. Resulted in ~35 Engineers
+                having a much more streamlined way to build features.
+              </li>
+              <li>
+                - During the later part of the rebuild, led and mentored a team
+                of 3-4 engineers and owned the rewrite of the settings page and
+                related sub-pages in React Native and Expo. Stressed the
+                importance of quality and well tested code and pushed for use of
+                AI tools.
+              </li>
+              <li>
+                - Previously, drove frontend architecture improvements,
+                including a shift toward server-driven UI patterns. Partnered
+                with backend teams to define GraphQL schema contracts, improving
+                mobile feature delivery speed and reducing redundant app
+                releases by ~20%.
+              </li>
+              <li>
+                - Integrated Column Tax, a tax filing service. This led to ~20k
+                customers filing taxes for the 2024 Tax year through the Varo
+                app.
+              </li>
+              <li>
+                - Spearheaded the rollout of Statsig as the experimentation
+                platform for Web. Collaborated with Product and Data Science to
+                implement over 10 controlled feature rollouts and A/B tests in
+                the first month.
+              </li>
+              <li>
+                <strong>Some technologies I am working with</strong>:
                 TypeScript, React, React Native, GraphQL, Fastify, PostgreSQL,
                 Node.js, Storybook, Figma and React Testing Library.
               </li>
@@ -111,23 +129,23 @@ const Resume = () => {
 
             <ul className="job-wrapper">
               <h4>
-                Sr. Frontend Developer <span className="span-light">@</span>{" "}
+                Sr. Frontend Developer <span className="span-light">@</span>
                 Overstock.com
               </h4>
-              <h5>October 2019 - December 2019</h5>
-              <li>- This was my brief second stint at Overstock.</li>
+              <h5>October 2019 December 2019</h5>
+              <li> - This was my brief second stint at Overstock.</li>
               <li>
                 - Fixed bugs and built features on the product details page.
               </li>
               <li>
-                - <strong>Some technologies I worked with</strong>: Node.js,
+                <strong>Some technologies I worked with</strong>: Node.js,
                 Express, Webpack, Redux and React.
               </li>
             </ul>
 
             <ul className="job-wrapper">
               <h4>
-                Sr. Full-Stack Developer <span className="span-light">@</span>{" "}
+                Sr. Full-Stack Developer <span className="span-light">@</span>
                 tZERO
               </h4>
               <h5>September 2018 - October 2019</h5>
@@ -139,16 +157,16 @@ const Resume = () => {
                 - Focused on Onboarding and KYC portion of the Web application,
                 worked across the stack, from UI to database.
               </li>
-              <li>- Filled in for multiple temporary Dev Lead stints.</li>
+              <li> - Filled in for multiple temporary Dev Lead stints.</li>
               <li>
-                - <strong>Some technologies I worked with</strong>: React,
-                Redux, Node.js, Express, PostgreSQL, Jest and Webpack.
+                <strong>Some technologies I worked with</strong>: React, Redux,
+                Node.js, Express, PostgreSQL, Jest and Webpack.
               </li>
             </ul>
 
             <ul className="job-wrapper">
               <h4>
-                Frontend Developer <span className="span-light">@</span>{" "}
+                Frontend Developer <span className="span-light">@</span>
                 Overstock.com
               </h4>
               <h5>October 2014 - September 2018</h5>
@@ -178,29 +196,29 @@ const Resume = () => {
                 team.
               </li>
               <li>
-                - <strong>Some technologies I worked with</strong>: jQuery,
+                <strong>Some technologies I worked with</strong>: jQuery,
                 Node.js, Express, Webpack, Redux and React.
               </li>
             </ul>
 
-            <ul className="job-wrapper">
+            {/* <ul className="job-wrapper">
               <h4>
-                Freelance Developer and Designer{" "}
+                Freelance Developer and Designer
                 <span className="span-light">@</span> Damir Hara Design
               </h4>
               <h5>March 2013 - &infin;</h5>
-              <li></li>
-              <li>
-                - Helped companies/clients build websites and web apps from
+              <li> - </li>
+              <li> - 
+                Helped companies/clients build websites and web apps from
                 scratch or by jumping in the middle of the project. I&apos;ve
                 worked on everything from simple one-page static websites to
                 production React apps served to millions of customers.
               </li>
-              <li>
+              <li> - 
                 <strong>Clients worked with:</strong> tZERO, Infowrap.com,
                 Cottonwood Electric, TheChapelMotorcycleShop.com.
               </li>
-            </ul>
+            </ul> */}
           </section>
           <section className="skills-pill-container">
             <div className="skills-title">
@@ -208,36 +226,36 @@ const Resume = () => {
             </div>
             <ul>
               <li className="main-skill">JavaScript</li>
-              <li>React</li>
-              <li>React Native</li>
-              <li>Redux</li>
-              <li>TypeScript</li>
-              <li>GraphQL (Apollo)</li>
-              <li>REST APIs</li>
-              <li>React Testing Library</li>
-              <li>Webpack</li>
+              <li> - React</li>
+              <li> - React Native</li>
+              <li> - Redux</li>
+              <li> - TypeScript</li>
+              <li> - GraphQL (Apollo)</li>
+              <li> - REST APIs</li>
+              <li> - React Testing Library</li>
+              <li> - Webpack</li>
               <li className="cool-fact-container">
                 Astro <span className="cool-fact">Used on this site! 🚀</span>
               </li>
-              <li>Expo</li>
-              <li>Next.js</li>
-              <li>Node.js</li>
+              <li> - Expo</li>
+              <li> - Next.js</li>
+              <li> - Node.js</li>
               <li className="main-skill">CSS</li>
-              <li>Styled Components</li>
-              <li>PostCSS</li>
-              <li>SASS</li>
-              <li>CSS Modules</li>
-              <li>Responsive Web Design</li>
-              <li>Storybook</li>
+              <li> - Styled Components</li>
+              <li> - PostCSS</li>
+              <li> - SASS</li>
+              <li> - CSS Modules</li>
+              <li> - Responsive Web Design</li>
+              <li> - Storybook</li>
               <li className="main-skill">Semantic HTML</li>
-              <li>Git &amp; CLI chops</li>
-              <li>Troubleshooting</li>
-              <li>Wireframing &amp; Prototyping</li>
-              <li>Cross-platform compatibility</li>
-              <li>Communication &amp; Liaison</li>
-              <li>Web Accessibility</li>
-              <li>Mentoring &amp; Advising</li>
-              <li>Leadership</li>
+              <li> - Git &amp; CLI chops</li>
+              <li> - Troubleshooting</li>
+              <li> - Wireframing &amp; Prototyping</li>
+              <li> - Cross-platform compatibility</li>
+              <li> - Communication &amp; Liaison</li>
+              <li> - Web Accessibility</li>
+              <li> - Mentoring &amp; Advising</li>
+              <li> - Leadership</li>
             </ul>
           </section>
           <section className="education-container">
@@ -245,7 +263,7 @@ const Resume = () => {
             <ul className="job-wrapper">
               <h4>University of Utah</h4>
               <h5>Class of 2014</h5>
-              <li>BS, Strategic Communication</li>
+              <li> - BS, Strategic Communication</li>
             </ul>
           </section>
         </main>
