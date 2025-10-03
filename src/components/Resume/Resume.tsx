@@ -87,8 +87,8 @@ const Resume = () => {
                 React Native with Expo and TypeScript.
               </li>
               <li>
-                - Led a team of 3-4 engineers and owned the rewrite of the settings page and
-                related sub-pages in React Native.
+                - Led a team of 3-4 engineers and owned the rewrite of the
+                settings page and related sub-pages in React Native.
               </li>
               <li>
                 - Integrated with 3rd party services such as Statsig as our
@@ -100,12 +100,12 @@ const Resume = () => {
               </li>
               <li>
                 - Played a pivotal role in hiring, mentoring and onboarding new
-                engineers.
+                engineers. i.e. hosting React workshops for Native Engineers.
               </li>
               <li>
                 - <strong>Some technologies I am working with</strong>:
-                TypeScript, React, React Native, GraphQL, Fastify, PostgreSQL,
-                Node.js, Storybook, Figma and React Testing Library.
+                TypeScript, React (Web), React Native (Expo), GraphQL, Node.js
+                (Fastify), PostgreSQL, React Testing Library, Storybook and Figma.
               </li>
             </ul>
 
