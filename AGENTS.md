@@ -1,0 +1,23 @@
+# Project Agent Rules
+
+- Always run shell commands via `shell` with `workdir` set; prefer `bash -lc` and use `rg` for repo searches when available.
+- Always use the `bun` runtime and use `bun` over any other package manager.
+- Follow the latest docs for the relevant libraries. Make sure you are checking the latest Astro docs.
+- Default new edits to ASCII; only introduce other characters when clearly warranted and already present.
+- Keep added code comments minimal and purposeful—only clarify non-obvious logic.
+- Never revert user-authored changes unless explicitly asked; work around existing dirty state.
+- Skip the planning tool for very small tasks, and avoid single-step plans; update any shared plan after completing a step.
+- Respect sandbox and approval settings: request escalation only when essential and include justification.
+- Summaries or outputs from commands should be concise—share key details rather than raw logs.
+- Reference files in responses using inline code paths with 1-based line numbers when pointing to specific changes.
+- Offer next-step suggestions (tests, builds, commits) only when they make sense for the work just done.
+- Limit leaving comments in tests unless the test is really intricate.
+- Always use semicolons after statements.
+- Make sure all of your changes are clean of Eslint and TypeScript errors.
+- After receiving tool results, carefully reflect on their quality and determine optimal next steps before proceeding. Use your thinking to plan and iterate based on this new information, and then take the best next action.
+- For maximum efficiency, whenever you need to perform multiple independent operations, invoke all relevant tools simultaneously rather than sequentially.
+- Before you finish, please verify your solution.
+- Do what has been asked; nothing more, nothing less.
+- NEVER create files unless they're absolutely necessary for achieving your goal.
+- ALWAYS prefer editing an existing file to creating a new one.
+- NEVER proactively create documentation files (*.md) or README files. Only create documentation files if explicitly requested by the User.

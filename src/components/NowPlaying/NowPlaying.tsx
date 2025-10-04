@@ -1,37 +1,39 @@
 import "./nowplaying.scss";
+import type { AlbumArtwork, Track } from "../../types/lastfm";
 
-interface AlbumArtwork {
-  size: string;
-  "#text": string;
+const LASTFM_ENDPOINT = `https://ws.audioscrobbler.com/2.0/?method=user.getRecentTracks&user=damdeez&api_key=${
+  import.meta.env.PUBLIC_LASTFM_KEY
+}&limit=1&format=json`;
+
+let track: Track | null = null;
+try {
+  const response = await fetch(LASTFM_ENDPOINT);
+
+  if (!response.ok) {
+    throw new Error(`Request failed with status ${response.status}`);
+  }
+
+  const json = await response.json();
+  track = json?.recenttracks?.track?.[0] ?? null;
+} catch (error) {
+  console.error("Failed to load now playing track", error);
 }
-
-interface Artist {
-  mbid: string;
-  "#text": string;
-}
-
-const data = await fetch(
-  `https://ws.audioscrobbler.com/2.0/?method=user.getRecentTracks&user=damdeez&api_key=${
-    import.meta.env.PUBLIC_LASTFM_KEY
-  }&limit=1&format=json`
-)
-  .then((response) => response.json())
-  .catch((e) => console.error(e));
-
-const spotifyDataRecent = data?.recenttracks?.track[0];
-const nowPlaying: boolean = spotifyDataRecent?.["@attr"]?.nowplaying ?? false;
-const albumArtwork: AlbumArtwork[] = spotifyDataRecent?.image;
-const artist: Artist = spotifyDataRecent?.artist;
-const songName: string = spotifyDataRecent?.name;
-const albumCover =
-  albumArtwork?.find((image: AlbumArtwork) => image.size === "medium")?.[
-    "#text"
-  ] ?? "";
 
 const NowPlaying = () => {
+  const albumArtwork = track?.image;
+  const albumCover =
+    albumArtwork?.find((image: AlbumArtwork) => image.size === "medium")?.[
+      "#text"
+    ] ?? "";
+  const artist = track?.artist?.["#text"] ?? "";
+  const songName = track?.name ?? "";
+  const nowPlaying =
+    track?.["@attr"]?.nowplaying === "true" ||
+    track?.["@attr"]?.nowplaying === true;
+
   return (
     <div className="now-playing">
-      {spotifyDataRecent && (
+      {track && (
         <>
           <span className="now-listening">
             {nowPlaying ? "🎧 #NowListening:" : "🎵 Last played:"}{" "}
@@ -41,7 +43,7 @@ const NowPlaying = () => {
               <img alt="album-cover" src={albumCover} />
             </span>
           )}
-          {artist && <span className="artist">{artist["#text"]}</span>}
+          {artist && <span className="artist">{artist}</span>}
           {songName && <span className="song-name"> - {songName}</span>}
         </>
       )}
