@@ -10,7 +10,7 @@ const NowPlaying = () => {
   const [track, setTrack] = useState<Track | null>(null);
 
   useEffect(() => {
-    if (!LASTFM_ENDPOINT) {
+    if (!LASTFM_ENDPOINT || navigator.webdriver) {
       return;
     }
 
