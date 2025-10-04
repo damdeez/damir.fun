@@ -20,7 +20,11 @@ const Resume = () => {
     <main className="resume">
       <section className="resume-container">
         <header className="header">
-          <a href="/hireme" className="coffee">
+          <a
+            aria-label="Learn more about Damir on the Hire Me page"
+            href="/hireme"
+            className="coffee"
+          >
             <img src="/images/damir.jpg" className="resume-img" alt="Damir" />
           </a>
           <h1 className="headline">
@@ -35,12 +39,15 @@ const Resume = () => {
               </a>
             </span>
             <span className="link">
-              <a href="https://www.linkedin.com/in/damirharambasic">
+              <a
+                href="https://www.linkedin.com/in/damirharambasic"
+                rel="noopener noreferrer"
+              >
                 linkedin.com/in/damir
                 <LinkSvg />
               </a>{" "}
               |{" "}
-              <a href="https://www.damir.fun">
+              <a href="https://www.damir.fun" rel="noopener noreferrer">
                 www.damir.fun
                 <LinkSvg />
               </a>
@@ -58,147 +65,179 @@ const Resume = () => {
             </p>
           </div>
         </header>
-        <main className="main-section">
+        <section
+          aria-label="Experience and background"
+          className="main-section"
+        >
           <section className="experience-container">
             <h3 className="sub-headline">EXPERIENCE</h3>
             <ul className="job-wrapper">
-              <h4>
-                Staff Software Engineer <span className="span-light">@</span>{" "}
-                Varo Bank
-              </h4>
-              <h5>January 2020 - Present</h5>
               <li>
-                - Currently working on our Lending products, focusing on new
-                features and improvements in a push for profitability.
-              </li>
-              <li>
-                - Previously worked across multiple projects and
-                cross-functional teams, often at once.
-              </li>
-              <li>
-                - Initially joined as a Senior Frontend Engineer and promoted to
-                Staff Engineer in March 2024.
-              </li>
-              <li>
-                <strong>Key contributions:</strong>
-              </li>
-              <li>
-                - Helped with a complete rewrite of the Varo Bank app using
-                React Native with Expo and TypeScript.
-              </li>
-              <li>
-                - Led a team of 3-4 engineers and owned the rewrite of the
-                settings page and related sub-pages in React Native.
-              </li>
-              <li>
-                - Integrated with 3rd party services such as Statsig as our
-                feature and experiment platform and Column Tax for tax prep.
-              </li>
-              <li>
-                - Led the effort in building and advocating for our new Design
-                System and promoted server-driven UI architectural pattern.
-              </li>
-              <li>
-                - Played a pivotal role in hiring, mentoring and onboarding new
-                engineers. i.e. hosting React workshops for Native Engineers.
-              </li>
-              <li>
-                - <strong>Some technologies I am working with</strong>:
-                TypeScript, React (Web), React Native (Expo), GraphQL, Node.js
-                (Fastify), PostgreSQL, React Testing Library, Storybook and Figma.
-              </li>
-            </ul>
-
-            <ul className="job-wrapper">
-              <h4>
-                Sr. Frontend Developer <span className="span-light">@</span>{" "}
-                Overstock.com
-              </h4>
-              <h5>October 2019 - December 2019</h5>
-              <li>- This was my brief second stint at Overstock.</li>
-              <li>
-                - Fixed bugs and built features on the product details page.
-              </li>
-              <li>
-                - <strong>Some technologies I worked with</strong>: Node.js,
-                Express, Webpack, Redux and React.
+                <h4>
+                  Staff Software Engineer <span className="span-light">@</span>{" "}
+                  Varo Bank
+                </h4>
+                <h5>January 2020 - Present</h5>
+                <ul>
+                  <li>
+                    - Currently working on our Lending products, focusing on new
+                    features and improvements in a push for profitability.
+                  </li>
+                  <li>
+                    - Previously worked across multiple projects and
+                    cross-functional teams, often at once.
+                  </li>
+                  <li>
+                    - Initially joined as a Senior Frontend Engineer and
+                    promoted to Staff Engineer in March 2024.
+                  </li>
+                  <li>
+                    <strong>Key contributions:</strong>
+                  </li>
+                  <li>
+                    - Helped with a complete rewrite of the Varo Bank app using
+                    React Native with Expo and TypeScript.
+                  </li>
+                  <li>
+                    - Led a team of 3-4 engineers and owned the rewrite of the
+                    settings page and related sub-pages in React Native.
+                  </li>
+                  <li>
+                    - Integrated with 3rd party services such as Statsig as our
+                    feature and experiment platform and Column Tax for tax prep.
+                  </li>
+                  <li>
+                    - I think of myself as as "Product Engineer" and I tend to
+                    split my time (70/30) between our front-end using React
+                    Native, Expo and React (web) and our GraphQL and NodeJS
+                    "middle-layer".
+                  </li>
+                  <li>
+                    - Led the effort in building and advocating for our new
+                    Design System and promoted server-driven UI architectural
+                    pattern.
+                  </li>
+                  <li>
+                    - Played a pivotal role in hiring, mentoring and onboarding
+                    new engineers. i.e. hosting React workshops for Native
+                    Engineers.
+                  </li>
+                  <li>
+                    - <strong>Some technologies I am working with</strong>:
+                    TypeScript, React (web), React Native (Expo), GraphQL,
+                    Node.js (Fastify), PostgreSQL, React Testing Library,
+                    Storybook and Figma.
+                  </li>
+                </ul>
               </li>
             </ul>
 
             <ul className="job-wrapper">
-              <h4>
-                Sr. Full-Stack Developer <span className="span-light">@</span>{" "}
-                tZERO
-              </h4>
-              <h5>September 2018 - October 2019</h5>
               <li>
-                - Built a securities trading platform greenfield project on the
-                blockchain.
-              </li>
-              <li>
-                - Focused on Onboarding and KYC portion of the Web application,
-                worked across the stack, from UI to database.
-              </li>
-              <li>- Filled in for multiple temporary Dev Lead stints.</li>
-              <li>
-                - <strong>Some technologies I worked with</strong>: React,
-                Redux, Node.js, Express, PostgreSQL, Jest and Webpack.
-              </li>
-            </ul>
-
-            <ul className="job-wrapper">
-              <h4>
-                Frontend Developer <span className="span-light">@</span>{" "}
-                Overstock.com
-              </h4>
-              <h5>October 2014 - September 2018</h5>
-              <li>
-                - Handled new feature implementation, A/B Tests, and bug
-                squishing on product pages.
-              </li>
-              <li>
-                - Worked on a full-stack mobile web app as well as various
-                client-side apps.
-              </li>
-              <li>
-                - Was involved in the design process of product with UX and
-                Product teammates.
-              </li>
-              <li>
-                - Built tools for our front-end workflow, such as implementing
-                ES6 support and ReactJS into our repo.
-              </li>
-              <li>
-                - Created reusable React components and NPM modules that were
-                used by teams across Overstock.com.
-              </li>
-              <li>
-                - During this time I was promoted to Senior Frontend Developer.
-                Some previous teams I worked with: Marketing and Production web
-                team.
-              </li>
-              <li>
-                - <strong>Some technologies I worked with</strong>: jQuery,
-                Node.js, Express, Webpack, Redux and React.
+                <h4>
+                  Sr. Frontend Developer <span className="span-light">@</span>{" "}
+                  Overstock.com
+                </h4>
+                <h5>October 2019 - December 2019</h5>
+                <ul>
+                  <li>- This was my brief second stint at Overstock.</li>
+                  <li>
+                    - Fixed bugs and built features on the product details page.
+                  </li>
+                  <li>
+                    - <strong>Some technologies I worked with</strong>: Node.js,
+                    Express, Webpack, Redux and React.
+                  </li>
+                </ul>
               </li>
             </ul>
 
             <ul className="job-wrapper">
-              <h4>
-                Freelance Developer and Designer{" "}
-                <span className="span-light">@</span> Damir Hara Design
-              </h4>
-              <h5>March 2013 - &infin;</h5>
-              <li></li>
               <li>
-                - Helped companies/clients build websites and web apps from
-                scratch or by jumping in the middle of the project. I&apos;ve
-                worked on everything from simple one-page static websites to
-                production React apps served to millions of customers.
+                <h4>
+                  Sr. Full-Stack Developer <span className="span-light">@</span>{" "}
+                  tZERO
+                </h4>
+                <h5>September 2018 - October 2019</h5>
+                <ul>
+                  <li>
+                    - Built a securities trading platform greenfield project on
+                    the blockchain.
+                  </li>
+                  <li>
+                    - Focused on Onboarding and KYC portion of the Web
+                    application, worked across the stack, from UI to database.
+                  </li>
+                  <li>- Filled in for multiple temporary Dev Lead stints.</li>
+                  <li>
+                    - <strong>Some technologies I worked with</strong>: React,
+                    Redux, Node.js, Express, PostgreSQL, Jest and Webpack.
+                  </li>
+                </ul>
               </li>
+            </ul>
+
+            <ul className="job-wrapper">
               <li>
-                <strong>Clients worked with:</strong> tZERO, Infowrap.com,
-                Cottonwood Electric, TheChapelMotorcycleShop.com.
+                <h4>
+                  Frontend Developer <span className="span-light">@</span>{" "}
+                  Overstock.com
+                </h4>
+                <h5>October 2014 - September 2018</h5>
+                <ul>
+                  <li>
+                    - Handled new feature implementation, A/B Tests, and bug
+                    squishing on product pages.
+                  </li>
+                  <li>
+                    - Worked on a full-stack mobile web app as well as various
+                    client-side apps.
+                  </li>
+                  <li>
+                    - Was involved in the design process of product with UX and
+                    Product teammates.
+                  </li>
+                  <li>
+                    - Built tools for our front-end workflow, such as
+                    implementing ES6 support and ReactJS into our repo.
+                  </li>
+                  <li>
+                    - Created reusable React components and NPM modules that
+                    were used by teams across Overstock.com.
+                  </li>
+                  <li>
+                    - During this time I was promoted to Senior Frontend
+                    Developer. Some previous teams I worked with: Marketing and
+                    Production web team.
+                  </li>
+                  <li>
+                    - <strong>Some technologies I worked with</strong>: jQuery,
+                    Node.js, Express, Webpack, Redux and React.
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+            <ul className="job-wrapper">
+              <li>
+                <h4>
+                  Freelance Developer and Designer{" "}
+                  <span className="span-light">@</span> Damir Hara Design
+                </h4>
+                <h5>March 2013 - &infin;</h5>
+                <ul>
+                  <li>
+                    - Helped companies/clients build websites and web apps from
+                    scratch or by jumping in the middle of the project.
+                    I&apos;ve worked on everything from simple one-page static
+                    websites to production React apps served to millions of
+                    customers.
+                  </li>
+                  <li>
+                    - <strong>Clients worked with:</strong> tZERO, Infowrap.com,
+                    Cottonwood Electric, TheChapelMotorcycleShop.com.
+                  </li>
+                </ul>
               </li>
             </ul>
           </section>
@@ -248,12 +287,16 @@ const Resume = () => {
               <li>BS, Strategic Communication</li>
             </ul>
           </section>
-        </main>
+        </section>
         <footer className="footer">
           <a className="footer-button" href="mailto:damir.hara@gmail.com">
             📧 Get In Touch
           </a>
-          <a className="footer-button" href={resumePdf}>
+          <a
+            aria-label="Download Damir's resume as a PDF"
+            className="footer-button"
+            href={resumePdf}
+          >
             💾 Download PDF
           </a>
         </footer>
