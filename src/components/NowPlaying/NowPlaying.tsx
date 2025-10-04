@@ -10,7 +10,7 @@ const NowPlaying = () => {
   const [track, setTrack] = useState<Track | null>(null);
 
   useEffect(() => {
-    const automatedContext =
+    const automatedContext = 
       navigator.webdriver ||
       /HeadlessChrome|PhantomJS|SlimerJS|Node\.js/i.test(navigator.userAgent ?? "");
 
