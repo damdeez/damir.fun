@@ -1,25 +1,11 @@
 import "./nowplaying.scss";
 import type { AlbumArtwork, Track } from "../../types/lastfm";
 
-const LASTFM_ENDPOINT = `https://ws.audioscrobbler.com/2.0/?method=user.getRecentTracks&user=damdeez&api_key=${
-  import.meta.env.PUBLIC_LASTFM_KEY
-}&limit=1&format=json`;
-
-let track: Track | null = null;
-try {
-  const response = await fetch(LASTFM_ENDPOINT);
-
-  if (!response.ok) {
-    throw new Error(`Request failed with status ${response.status}`);
-  }
-
-  const json = await response.json();
-  track = json?.recenttracks?.track?.[0] ?? null;
-} catch (error) {
-  console.error("Failed to load now playing track", error);
+interface NowPlayingProps {
+  track: Track | null;
 }
 
-const NowPlaying = () => {
+const NowPlaying = ({ track }: NowPlayingProps) => {
   const albumArtwork = track?.image;
   const albumCover =
     albumArtwork?.find((image: AlbumArtwork) => image.size === "medium")?.[
