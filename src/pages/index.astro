@@ -5,38 +5,12 @@ import Intro from '../components/Intro/Intro';
 import NowPlaying from '../components/NowPlaying/NowPlaying';
 import BuiltWith from '../components/BuiltWith/BuiltWith';
 import { pageTitle } from '../constants/strings';
-import type { Track } from '../types/lastfm';
-
-const LASTFM_ENDPOINT = import.meta.env.PUBLIC_LASTFM_KEY
-  ? `https://ws.audioscrobbler.com/2.0/?method=user.getRecentTracks&user=damdeez&api_key=${import.meta.env.PUBLIC_LASTFM_KEY}&limit=1&format=json`
-  : null;
-
-let track: Track | null = null;
-
-if (LASTFM_ENDPOINT) {
-  try {
-    const response = await fetch(LASTFM_ENDPOINT, {
-      signal: typeof AbortSignal !== "undefined" && "timeout" in AbortSignal
-        ? AbortSignal.timeout(5000)
-        : undefined,
-    });
-
-    if (!response.ok) {
-      throw new Error(`Request failed with status ${response.status}`);
-    }
-
-    const json = await response.json();
-    track = json?.recenttracks?.track?.[0] ?? null;
-  } catch (error) {
-    console.error("Failed to load now playing track", error);
-  }
-}
 ---
 
 <Layout title={"damir.fun | Resume | " + pageTitle}>
 	<main class="main-page-content">
 		<Intro />
-		<NowPlaying track={track} />
+		<NowPlaying client:load />
 		<BuiltWith />
 	</main>
 </Layout>

@@ -1,11 +1,53 @@
+import { useEffect, useState } from "react";
 import "./nowplaying.scss";
 import type { AlbumArtwork, Track } from "../../types/lastfm";
 
-interface NowPlayingProps {
-  track: Track | null;
-}
+const LASTFM_ENDPOINT = import.meta.env.PUBLIC_LASTFM_KEY
+  ? `https://ws.audioscrobbler.com/2.0/?method=user.getRecentTracks&user=damdeez&api_key=${import.meta.env.PUBLIC_LASTFM_KEY}&limit=1&format=json`
+  : null;
 
-const NowPlaying = ({ track }: NowPlayingProps) => {
+const NowPlaying = () => {
+  const [track, setTrack] = useState<Track | null>(null);
+
+  useEffect(() => {
+    if (!LASTFM_ENDPOINT) {
+      return;
+    }
+
+    const controller = new AbortController();
+    const timeoutId = window.setTimeout(() => controller.abort(), 5000);
+
+    const fetchTrack = async () => {
+      try {
+        const response = await fetch(LASTFM_ENDPOINT, {
+          signal: controller.signal,
+        });
+
+        if (!response.ok) {
+          throw new Error(`Request failed with status ${response.status}`);
+        }
+
+        const json = await response.json();
+        setTrack(json?.recenttracks?.track?.[0] ?? null);
+      } catch (error) {
+        if (error instanceof DOMException && error.name === "AbortError") {
+          return;
+        }
+
+        console.error("Failed to load now playing track", error);
+      } finally {
+        clearTimeout(timeoutId);
+      }
+    };
+
+    fetchTrack();
+
+    return () => {
+      clearTimeout(timeoutId);
+      controller.abort();
+    };
+  }, []);
+
   const albumArtwork = track?.image;
   const albumCover =
     albumArtwork?.find((image: AlbumArtwork) => image.size === "medium")?.[
