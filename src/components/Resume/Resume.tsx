@@ -88,6 +88,11 @@ const Resume = () => {
                     cross-functional teams, often at once.
                   </li>
                   <li>
+                    - I split my time (70/30) between our React Native,
+                    Expo and React (web) frontend and our GraphQL, Node.js
+                    "middle-layer".
+                  </li>
+                  <li>
                     - Initially joined as a Senior Frontend Engineer and
                     promoted to Staff Engineer in March 2024.
                   </li>
@@ -105,12 +110,6 @@ const Resume = () => {
                   <li>
                     - Integrated with 3rd party services such as Statsig as our
                     feature and experiment platform and Column Tax for tax prep.
-                  </li>
-                  <li>
-                    - I think of myself as as "Product Engineer" and I tend to
-                    split my time (70/30) between our front-end using React
-                    Native, Expo and React (web) and our GraphQL and NodeJS
-                    "middle-layer".
                   </li>
                   <li>
                     - Led the effort in building and advocating for our new
