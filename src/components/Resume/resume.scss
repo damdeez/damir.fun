@@ -1,4 +1,4 @@
-@use '../../styles/variables';
+@use "../../styles/variables";
 
 .resume {
   background-color: variables.$white;
@@ -74,6 +74,10 @@ h1.headline {
   margin: 0 0 5px;
 }
 
+.coffee {
+  text-decoration: none;
+}
+
 .resume-img {
   border: 2px solid variables.$color1;
   border-radius: 25%;
@@ -134,7 +138,7 @@ h1.headline {
       font-style: italic;
       line-height: 18px;
     }
-    
+
     strong {
       font-weight: 700;
     }
@@ -166,13 +170,13 @@ h1.headline {
 
 .skills-pill-container {
   margin-top: 25px;
-  
+
   ul {
     display: flex;
     flex-wrap: wrap;
     gap: 4px;
   }
-  
+
   li {
     background-color: variables.$color1;
     color: variables.$white;
@@ -270,13 +274,12 @@ h1.headline {
   .phone-link,
   .link {
     font-size: 16px;
-    
+
     svg {
       height: 14px;
       width: 14px;
     }
   }
-  
 
   h1.headline {
     font-size: 32px;
