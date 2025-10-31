@@ -41,6 +41,10 @@ h1.headline {
     &:hover {
       color: variables.$color2;
       text-decoration: underline;
+      
+      .link-icon {
+        fill: variables.$color2;
+      }
     }
   }
 }
