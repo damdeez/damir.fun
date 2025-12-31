@@ -16,9 +16,9 @@
     "@astrojs/react": "^4.4.2",
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
-    "astro": "^5.16.4",
-    "react": "^19.2.1",
-    "react-dom": "^19.2.1",
-    "sass": "^1.94.2"
+    "astro": "^5.16.6",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "sass": "^1.97.1"
   }
 }

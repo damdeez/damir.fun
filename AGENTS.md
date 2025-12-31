@@ -1,7 +1,13 @@
 # Project Agent Rules
 
-- Always run shell commands via `shell` with `workdir` set; prefer `bash -lc` and use `rg` for repo searches when available.
+- Always run shell commands via `shell_command` with `workdir` set; prefer `bash -lc` and use `rg` for repo searches when available.
 - Always use the `bun` runtime and use `bun` over any other package manager.
+- Use `bun run` for scripts (e.g., `bun run dev`, `bun run build`, `bun run preview`).
+- Prefer `.astro` components for layout/content; use React/TSX only for interactive islands and add `client:*` directives when needed.
+- Keep component styles in adjacent `.scss` files and import them from the component.
+- Use shared SCSS variables from `src/styles/variables.scss` instead of redefining colors or fonts.
+- Preserve existing formatting per file (tabs vs spaces); avoid reformatting unrelated code.
+- Keep static assets in `public/` and reference them with root-relative paths.
 - Follow the latest docs for the relevant libraries. Make sure you are checking the latest Astro docs.
 - Default new edits to ASCII; only introduce other characters when clearly warranted and already present.
 - Keep added code comments minimal and purposeful—only clarify non-obvious logic.
