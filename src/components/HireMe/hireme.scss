@@ -1,0 +1,46 @@
+@use '../../styles/variables';
+
+.hireme-page {
+  .hireme-title {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+
+  .hireme-section {
+    margin-bottom: 24px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  .hireme-section-title {
+    color: variables.$color3;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin: 20px 0 10px;
+    text-transform: uppercase;
+  }
+
+  .hireme-list {
+    list-style: disc;
+    margin: 8px 0 14px;
+    padding-left: 20px;
+
+    li {
+      line-height: 26px;
+      margin-bottom: 6px;
+    }
+
+    a {
+      color: variables.$color5;
+    }
+  }
+
+  .hireme-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+}
