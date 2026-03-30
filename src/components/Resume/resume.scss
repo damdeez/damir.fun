@@ -55,20 +55,26 @@ h1.headline {
   top: -9999px;
 }
 
-.email-link,
-.link {
-  display: block;
+.email-link {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
   font-size: 22px;
   font-weight: normal;
   margin: 5px 0;
+}
+
+.link {
+  display: none;
 }
 
 .phone-link {
   font-size: 20px;
 }
 
+.email-link svg,
 .link svg {
-  margin-left: 5px;
+  margin-left: 2px;
   margin-bottom: -3px;
 }
 
@@ -238,6 +244,10 @@ h1.headline {
     max-width: 1200px;
   }
 
+  .link {
+    display: block;
+  }
+
   .hide-for-print,
   .cool-fact,
   .footer {
@@ -277,7 +287,7 @@ h1.headline {
   .email-link,
   .phone-link,
   .link {
-    font-size: 16px;
+    font-size: 18px;
 
     svg {
       height: 14px;
