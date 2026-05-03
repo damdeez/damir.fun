@@ -120,8 +120,8 @@ h1.headline {
   }
 
   h4,
-  h5 {
-    margin: 10px 0 8px;
+  h5:not(.role-title) {
+    margin: 5px 0 8px;
   }
 
   h4 {
@@ -157,6 +157,29 @@ h1.headline {
       font-style: italic;
     }
   }
+}
+
+.role-list {
+  border-left: 1.5px solid rgba(variables.$color1, 0.25);
+  margin: 10px 0 0 4px;
+  padding: 0 0 0 16px;
+}
+
+.role-item + .role-item {
+  margin-top: 18px;
+}
+
+.role-title {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0 0 5px 0;
+}
+
+.role-dates {
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0 0 6px;
+  opacity: 0.75;
 }
 
 .education-container {
@@ -244,10 +267,15 @@ h1.headline {
     max-width: 1200px;
   }
 
+  .email-link {
+    font-size: 20px;
+  }
+
   .link {
     display: block;
   }
 
+  .tenure,
   .hide-for-print,
   .cool-fact,
   .footer {
