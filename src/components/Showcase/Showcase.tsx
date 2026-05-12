@@ -78,7 +78,7 @@ function Showcase() {
         <h2 className='showcase-section-title'>
           Varo Bank | Pay Over Time Feature Walkthrough
         </h2>
-        <p>Quick walkthrough of the Pay Over Time feature I am building. Was the lead Frontend Developer for this feature.</p>
+        <p>Quick walkthrough of the Pay Over Time feature I helped build. I was the lead Engineer on this project, working with technologies such as: React Native (Expo), TypeScript, Jotai, GraphQL, NodeJS, etc.</p>
         <div className='showcase-video-wrapper'>
           <iframe
             src='https://www.loom.com/embed/155faf584a814707a9c4c075af455348'
@@ -92,7 +92,7 @@ function Showcase() {
         <h2 className='showcase-section-title'>
           Varo Bank | My Varo Section Walkthrough
         </h2>
-        <p>Quick walkthrough of My Varo Section which I led a small team to build.</p>
+        <p>Quick walkthrough of My Varo Section which I led a small team to build. Technologies used: React Native (Expo), TypeScript, GraphQL, NodeJS, etc.</p>
         <div className='showcase-video-wrapper'>
           <iframe
             src='https://www.loom.com/embed/489fc954c02047cd82b3d7b7fc9eb5f8'
