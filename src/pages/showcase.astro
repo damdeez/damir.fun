@@ -1,0 +1,10 @@
+---
+import { pageTitle } from '../constants/strings';
+import Layout from '../layouts/Layout.astro';
+import '../styles/global.scss';
+import ShowcaseComponent from '../components/Showcase/Showcase';
+---
+
+<Layout title={"damir.fun | Showcase | " + pageTitle}>
+  <ShowcaseComponent client:only="react" />
+</Layout>

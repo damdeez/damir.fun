@@ -7,7 +7,7 @@ const LASTFM_ENDPOINT = import.meta.env.PUBLIC_LASTFM_KEY
   : null;
 const FETCH_TIMEOUT_MS = 5000;
 
-const NowPlaying = () => {
+function NowPlaying() {
   const [track, setTrack] = useState<Track | null>(null);
 
   useEffect(() => {

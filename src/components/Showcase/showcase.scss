@@ -1,0 +1,106 @@
+@use '../../styles/variables';
+
+.showcase-page {
+  .showcase-title {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+
+  .showcase-section {
+    margin-bottom: 24px;
+    width: 100%;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  .showcase-section-title {
+    color: variables.$color3;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 20px 0 10px;
+    text-transform: uppercase;
+  }
+
+  .showcase-video-wrapper {
+    margin-top: 12px;
+    padding-bottom: 56.25%;
+    position: relative;
+    width: 100%;
+
+    iframe {
+      border: none;
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+  }
+
+  .showcase-gate {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+  }
+
+  .showcase-gate-form {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .showcase-gate-input {
+    background: transparent;
+    border: 2px solid variables.$white;
+    border-radius: 3px;
+    color: variables.$white;
+    font-family: variables.$inconsolata-font-family;
+    font-size: 14px;
+    padding: 10px 16px;
+
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.4);
+    }
+
+    &:focus {
+      border-color: variables.$color3;
+      outline: none;
+    }
+  }
+
+  .showcase-gate-btn {
+    background: transparent;
+    border: 2px solid variables.$white;
+    border-radius: 3px;
+    color: variables.$white;
+    cursor: pointer;
+    font-family: variables.$inconsolata-font-family;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 10px 30px;
+    text-transform: uppercase;
+
+    &:hover {
+      background: variables.$white;
+      color: variables.$color5;
+    }
+  }
+
+  .showcase-gate-error {
+    color: variables.$color5;
+    font-size: 12px;
+    margin: 0;
+  }
+
+  .showcase-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 40px;
+  }
+}
