@@ -25,17 +25,15 @@
   }
 
   .showcase-video-wrapper {
-    margin-top: 12px;
-    padding-bottom: 56.25%;
-    position: relative;
+    aspect-ratio: 9 / 19.5;
+    margin: 12px auto 0;
+    max-width: 340px;
     width: 100%;
 
     iframe {
       border: none;
+      display: block;
       height: 100%;
-      left: 0;
-      position: absolute;
-      top: 0;
       width: 100%;
     }
   }

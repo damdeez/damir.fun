@@ -92,7 +92,7 @@ function Showcase() {
         </p>
         <div className='showcase-video-wrapper'>
           <iframe
-            src='https://www.loom.com/embed/155faf584a814707a9c4c075af455348'
+            src='https://www.loom.com/embed/155faf584a814707a9c4c075af455348?hideEmbedTopBar=true'
             title='Varo Bank | Pay Over Time Feature Walkthrough'
             allowFullScreen
             allow='autoplay; fullscreen; picture-in-picture'
@@ -110,7 +110,7 @@ function Showcase() {
         </p>
         <div className='showcase-video-wrapper'>
           <iframe
-            src='https://www.loom.com/embed/489fc954c02047cd82b3d7b7fc9eb5f8'
+            src='https://www.loom.com/embed/489fc954c02047cd82b3d7b7fc9eb5f8?hideEmbedTopBar=true'
             title='Varo Bank | My Varo Section Walkthrough'
             allowFullScreen
             allow='autoplay; fullscreen; picture-in-picture'
