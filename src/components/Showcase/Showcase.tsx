@@ -83,7 +83,7 @@ function Showcase() {
       {/* Add video sections below — replace src with your embed URL (YouTube, Loom, Vimeo, etc.) */}
       <section className='showcase-section'>
         <h2 className='showcase-section-title'>
-          Varo Bank | Pay Over Time Feature Walkthrough
+          Varo Bank | <span>Pay Over Time</span>
         </h2>
         <p>
           Quick walkthrough of the Pay Over Time feature I helped build. I was
@@ -101,7 +101,7 @@ function Showcase() {
       </section>
       <section className='showcase-section'>
         <h2 className='showcase-section-title'>
-          Varo Bank | My Varo Section Walkthrough
+          Varo Bank | <span>My Varo</span>
         </h2>
         <p>
           Quick walkthrough of My Varo Section which I led a small team to
