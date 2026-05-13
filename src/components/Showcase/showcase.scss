@@ -44,7 +44,7 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 10px;
     width: 100%;
   }
 
@@ -83,7 +83,6 @@
     font-size: 12px;
     font-weight: 700;
     padding: 10px 30px;
-    text-transform: uppercase;
 
     &:hover {
       background: variables.$white;
@@ -92,9 +91,10 @@
   }
 
   .showcase-gate-error {
+    align-self: flex-start;
     color: variables.$color5;
     font-size: 12px;
-    margin: 0;
+    margin: -10px 0 0;
   }
 
   .showcase-actions {

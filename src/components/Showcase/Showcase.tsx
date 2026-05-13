@@ -18,7 +18,7 @@ function Showcase() {
 
     return () => {
       localStorage.removeItem(STORAGE_KEY);
-    }
+    };
   }, []);
 
   if (!mounted) {
@@ -27,12 +27,12 @@ function Showcase() {
 
   if (!authenticated) {
     return (
-      <main className="main-page-content showcase-page">
-        <div className="showcase-gate">
-          <h1 className="showcase-title">Showcase</h1>
+      <main className='main-page-content showcase-page'>
+        <div className='showcase-gate'>
+          <h1 className='showcase-title'>Showcase 🪩</h1>
           <p>This page is password protected.</p>
           <form
-            className="showcase-gate-form"
+            className='showcase-gate-form'
             onSubmit={(e) => {
               e.preventDefault();
               if (input === PASSWORD) {
@@ -45,18 +45,25 @@ function Showcase() {
             }}
           >
             <input
-              type="password"
-              className="showcase-gate-input"
+              type='password'
+              className='showcase-gate-input'
               value={input}
-              onChange={(e) => { setInput(e.target.value); setError(false); }}
-              placeholder="Password"
+              onChange={(e) => {
+                setInput(e.target.value);
+                setError(false);
+              }}
+              placeholder='Password'
               autoFocus
             />
-            <button className="showcase-gate-btn" type="submit">Enter</button>
+            <button className='showcase-gate-btn' type='submit'>
+              Enter
+            </button>
           </form>
-          {error && <p className="showcase-gate-error">Incorrect password.</p>}
-          <div className="showcase-actions">
-            <a className="back-link" href="/">Home</a>
+          {error && <p className='showcase-gate-error'>Incorrect password.</p>}
+          <div className='showcase-actions'>
+            <a className='back-link' href='/'>
+              &larr; Home
+            </a>
           </div>
         </div>
       </main>
@@ -65,7 +72,7 @@ function Showcase() {
 
   return (
     <main className='main-page-content showcase-page'>
-      <h1 className='showcase-title'>Showcase</h1>
+      <h1 className='showcase-title'>Showcase 🪩</h1>
       <section className='showcase-section'>
         <p>
           A collection of video walkthroughs from projects I&apos;ve been
@@ -78,7 +85,11 @@ function Showcase() {
         <h2 className='showcase-section-title'>
           Varo Bank | Pay Over Time Feature Walkthrough
         </h2>
-        <p>Quick walkthrough of the Pay Over Time feature I helped build. I was the lead Engineer on this project, working with technologies such as: React Native (Expo), TypeScript, Jotai, GraphQL, NodeJS, etc.</p>
+        <p>
+          Quick walkthrough of the Pay Over Time feature I helped build. I was
+          the lead Engineer on this project, working with technologies such as:
+          React Native (Expo), TypeScript, Jotai, GraphQL, NodeJS, etc.
+        </p>
         <div className='showcase-video-wrapper'>
           <iframe
             src='https://www.loom.com/embed/155faf584a814707a9c4c075af455348'
@@ -92,7 +103,11 @@ function Showcase() {
         <h2 className='showcase-section-title'>
           Varo Bank | My Varo Section Walkthrough
         </h2>
-        <p>Quick walkthrough of My Varo Section which I led a small team to build. Technologies used: React Native (Expo), TypeScript, GraphQL, NodeJS, etc.</p>
+        <p>
+          Quick walkthrough of My Varo Section which I led a small team to
+          build. Technologies used: React Native (Expo), TypeScript, GraphQL,
+          NodeJS, etc.
+        </p>
         <div className='showcase-video-wrapper'>
           <iframe
             src='https://www.loom.com/embed/489fc954c02047cd82b3d7b7fc9eb5f8'
@@ -105,7 +120,7 @@ function Showcase() {
 
       <div className='showcase-actions'>
         <a className='back-link' href='/'>
-          Home
+          &larr; Home
         </a>
       </div>
     </main>
