@@ -13,12 +13,12 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/react": "^5.0.2",
-    "@types/react": "^19.2.14",
-    "@types/react-dom": "^19.2.3",
-    "astro": "^6.1.1",
-    "react": "^19.2.4",
-    "react-dom": "^19.2.4",
-    "sass": "^1.98.0"
+    "@astrojs/react": "^6.0.4",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.4",
+    "astro": "^7.2.4",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "sass": "^1.103.1"
   }
 }
