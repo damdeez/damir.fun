@@ -244,6 +244,7 @@ h1.headline {
 
 .footer {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
   margin: 50px 0;
 }
@@ -268,12 +269,46 @@ h1.headline {
     max-width: 1200px;
   }
 
+  .resume-img {
+    border-width: 1px;
+    min-height: 0;
+    min-width: 0;
+    padding: 0;
+    width: 90px;
+  }
+
+  .header {
+    align-items: center;
+    column-gap: 16px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+  }
+
+  .resume-summary {
+    grid-column: 1 / -1;
+  }
+
+  .coffee {
+    display: block;
+    line-height: 0;
+  }
+
+  h1.headline {
+    font-size: 30px;
+    margin: 0;
+  }
+
   .email-link {
-    font-size: 20px;
+    font-size: 15px;
+    gap: 2px;
   }
 
   .link {
     display: block;
+  }
+
+  .link-icon {
+    display: none;
   }
 
   .tenure,
@@ -324,9 +359,30 @@ h1.headline {
     }
   }
 
+  .header {
+    align-items: center;
+    column-gap: 12px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+  }
+
+  .resume-summary {
+    grid-column: 1 / -1;
+  }
+
+  .coffee {
+    display: block;
+    line-height: 0;
+  }
+
   h1.headline {
-    font-size: 32px;
-    margin-left: 0;
+    font-size: clamp(24px, 7vw, 28px);
+    margin: 0;
+    min-width: 0;
+  }
+
+  .resume-img {
+    width: 90px;
   }
 
   .skills-education-wrapper {

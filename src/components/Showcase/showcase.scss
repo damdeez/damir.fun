@@ -46,6 +46,19 @@
     }
   }
 
+  .showcase-clip {
+    display: block;
+    margin: 12px 0 0;
+    max-width: 295px;
+
+    img {
+      border-radius: 12px;
+      display: block;
+      height: auto;
+      width: 100%;
+    }
+  }
+
   .showcase-gate {
     align-items: center;
     display: flex;

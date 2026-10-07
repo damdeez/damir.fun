@@ -64,6 +64,9 @@ function Showcase() {
             <a className='back-link' href='/'>
               &larr; Home
             </a>
+            <a className='back-link' href='/resume'>
+              Resume
+            </a>
           </div>
         </div>
       </main>
@@ -75,9 +78,34 @@ function Showcase() {
       <h1 className='showcase-title'>Showcase 🪩</h1>
       <section className='showcase-section'>
         <p>
-          A collection of video walkthroughs from projects I&apos;ve been
-          working on.
+          A collection of clips and video walkthroughs from projects I&apos;ve
+          been working on.
         </p>
+      </section>
+
+      <section className='showcase-section'>
+        <h2 className='showcase-section-title'>
+          Varo Bank | <span>Pay Later</span>
+        </h2>
+        <p>
+          The &quot;How Pay Later works&quot; carousel. My focus was bringing the
+          design vision to life: animating the images and the page progression
+          pills underneath the content. Built with React Native (Expo) and
+          TypeScript.
+        </p>
+        <picture className='showcase-clip'>
+          <source
+            media='(prefers-reduced-motion: reduce)'
+            srcSet='/images/varo-pay-later-still.png'
+          />
+          <img
+            src='/images/varo-pay-later.gif'
+            alt='Varo Pay Later carousel animating through its steps, starting with Plan your purchase'
+            width={295}
+            height={640}
+            loading='lazy'
+          />
+        </picture>
       </section>
 
       {/* Add video sections below — replace src with your embed URL (YouTube, Loom, Vimeo, etc.) */}
@@ -121,6 +149,9 @@ function Showcase() {
       <div className='showcase-actions'>
         <a className='back-link' href='/'>
           &larr; Home
+        </a>
+        <a className='back-link' href='/resume'>
+          Resume
         </a>
       </div>
     </main>
