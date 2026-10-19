@@ -2,24 +2,60 @@ import { useState, useEffect } from 'react';
 import './showcase.scss';
 
 const STORAGE_KEY = 'showcase_auth';
-const PASSWORD = import.meta.env.PUBLIC_SHOWCASE_PASSWORD as string;
 
-function Showcase() {
+async function sha256(value: string) {
+  const digest = await crypto.subtle.digest(
+    'SHA-256',
+    new TextEncoder().encode(value),
+  );
+  return Array.from(new Uint8Array(digest), (byte) =>
+    byte.toString(16).padStart(2, '0'),
+  ).join('');
+}
+
+interface ShowcaseProps {
+  passHash: string;
+}
+
+function Showcase({ passHash }: ShowcaseProps) {
   const [authenticated, setAuthenticated] = useState(false);
   const [input, setInput] = useState('');
   const [error, setError] = useState(false);
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    setMounted(true);
-    if (localStorage.getItem(STORAGE_KEY) === 'true') {
-      setAuthenticated(true);
-    }
+    const checkAccess = async () => {
+      try {
+        const params = new URLSearchParams(window.location.search);
+        const passphrase = params.get('passphrase');
+
+        if (passHash && passphrase && (await sha256(passphrase)) === passHash) {
+          localStorage.setItem(STORAGE_KEY, 'true');
+          setAuthenticated(true);
+
+          params.delete('passphrase');
+          const query = params.toString();
+          window.history.replaceState(
+            null,
+            '',
+            window.location.pathname +
+              (query ? `?${query}` : '') +
+              window.location.hash,
+          );
+        } else if (localStorage.getItem(STORAGE_KEY) === 'true') {
+          setAuthenticated(true);
+        }
+      } finally {
+        setMounted(true);
+      }
+    };
+
+    checkAccess();
 
     return () => {
       localStorage.removeItem(STORAGE_KEY);
     };
-  }, []);
+  }, [passHash]);
 
   if (!mounted) {
     return null;
@@ -30,12 +66,16 @@ function Showcase() {
       <main className='main-page-content showcase-page'>
         <div className='showcase-gate'>
           <h1 className='showcase-title'>Showcase 🪩</h1>
-          <p>This page is password protected.</p>
+          <p>
+            This page is password protected.{' '}
+            <a href='mailto:damir.hara@gmail.com'>Contact me</a>{' '}
+            for access.
+          </p>
           <form
             className='showcase-gate-form'
-            onSubmit={(e) => {
+            onSubmit={async (e) => {
               e.preventDefault();
-              if (input === PASSWORD) {
+              if (passHash && (await sha256(input)) === passHash) {
                 localStorage.setItem(STORAGE_KEY, 'true');
                 setAuthenticated(true);
               } else {
@@ -88,10 +128,10 @@ function Showcase() {
           Varo Bank | <span>Pay Later</span>
         </h2>
         <p>
-          The &quot;How Pay Later works&quot; carousel. My focus was bringing the
-          design vision to life: animating the images and the page progression
-          pills underneath the content. Built with React Native (Expo) and
-          TypeScript.
+          The &quot;How Pay Later works&quot; carousel. My focus was bringing
+          the design vision to life: animating the images and the page
+          progression pills underneath the content. Built with React Native
+          (Expo) and TypeScript.
         </p>
         <picture className='showcase-clip'>
           <source

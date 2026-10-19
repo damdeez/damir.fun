@@ -1,10 +1,16 @@
 ---
+import { createHash } from 'node:crypto';
 import { pageTitle } from '../constants/strings';
 import Layout from '../layouts/Layout.astro';
 import '../styles/global.scss';
 import ShowcaseComponent from '../components/Showcase/Showcase';
+
+const password = import.meta.env.SHOWCASE_PASSWORD as string | undefined;
+const passHash = password
+  ? createHash('sha256').update(password).digest('hex')
+  : '';
 ---
 
-<Layout title={"damir.fun | Showcase | " + pageTitle}>
-  <ShowcaseComponent client:only="react" />
+<Layout title={"damir.fun | Showcase | " + pageTitle} noindex>
+  <ShowcaseComponent client:only="react" passHash={passHash} />
 </Layout>
