@@ -12,6 +12,6 @@ $transparent: transparent;
 // Device Widths
 $mobile: 750px;
 
-$inconsolata-font-family: 'Inconsolata', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$inconsolata-font-family: var(--font-inconsolata), -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 $helvetica-font-family: 'Helvetica Neue', Helvetica, 'Inconsolata', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-$marker-font-family: 'Gochi Hand', 'Comic Sans MS', cursive;
+$marker-font-family: var(--font-gochi-hand);
