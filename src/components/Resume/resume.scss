@@ -41,7 +41,7 @@ h1.headline {
     @include marker.link(variables.$color2, variables.$color5);
 
     &:nth-child(2) {
-      --marker-tilt: -4deg;
+      --marker-tilt: -3deg;
       @include marker.fill(variables.$color3);
 
       &:hover {
