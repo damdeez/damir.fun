@@ -50,7 +50,7 @@ function NowPlaying() {
 
   const albumArtwork = track?.image;
   const albumCover =
-    albumArtwork?.find((image: AlbumArtwork) => image.size === "medium")?.[
+    albumArtwork?.find((image: AlbumArtwork) => image.size === "large")?.[
       "#text"
     ] ?? "";
   const artist = track?.artist?.["#text"] ?? "";
@@ -74,7 +74,7 @@ function NowPlaying() {
         </span>
         {albumArtwork && albumCover && (
           <span className="album-cover">
-            <img alt={albumAltText} src={albumCover} />
+            <img alt={albumAltText} src={albumCover} width={40} height={40} />
           </span>
         )}
         {artist && <span className="artist">{artist}</span>}
