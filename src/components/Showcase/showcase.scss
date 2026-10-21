@@ -1,6 +1,21 @@
 @use '../../styles/variables';
 
 .showcase-page {
+  // Password screen fills the viewport so the link buttons sit at the bottom
+  &.showcase-page-gate {
+    box-sizing: border-box;
+    min-height: 100vh;
+    min-height: 100dvh;
+
+    .showcase-gate {
+      flex: 1;
+    }
+
+    .showcase-actions {
+      margin-top: auto;
+    }
+  }
+
   .showcase-title {
     font-size: 30px;
     margin-bottom: 40px;

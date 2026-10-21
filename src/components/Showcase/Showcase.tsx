@@ -63,7 +63,7 @@ function Showcase({ passHash }: ShowcaseProps) {
 
   if (!authenticated) {
     return (
-      <main className='main-page-content showcase-page'>
+      <main className='main-page-content showcase-page showcase-page-gate'>
         <div className='showcase-gate'>
           <h1 className='showcase-title'>Showcase 🪩</h1>
           <p>
