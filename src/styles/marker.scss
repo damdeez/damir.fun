@@ -13,9 +13,9 @@ $palette: (
 );
 
 // How much darker (lightness %) a link's own color gets on hover/focus and while pressed.
-// Capped by purple, the darkest color: past ~12% the dark link text drops under 4.5:1.
-$hover-darken: 10%;
-$active-darken: 12%;
+// Purple is the limit: past ~12% its dark link text drops under 4.5:1 (pressed is slightly past it).
+$hover-darken: 12%;
+$active-darken: 14%;
 
 $stroke-mask: linear-gradient(100deg, transparent 0.5%, #000 2.5%, #000 96%, transparent 98.5%);
 
