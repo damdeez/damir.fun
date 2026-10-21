@@ -47,10 +47,18 @@ $stroke-mask: linear-gradient(100deg, transparent 0.5%, #000 2.5%, #000 96%, tra
   }
 }
 
+// Tilt in degrees; negative slopes up to the right
+$tilts: (
+  '1': -1deg,
+  '2': -2deg,
+  '3': -3deg,
+  'down-3': 3deg,
+);
+
 // Highlighter stroke drawn on a pseudo-element so it can tilt without tilting the text
-@mixin link($base: null, $hover: null) {
-  // Default tilt; override per link with a more specific `--marker-tilt`
+@mixin link {
   --marker-tilt: -2deg;
+  color: variables.$black;
   padding: 0.1em 0.3em;
   position: relative;
   text-decoration: none;
@@ -69,23 +77,18 @@ $stroke-mask: linear-gradient(100deg, transparent 0.5%, #000 2.5%, #000 96%, tra
     transform: rotate(var(--marker-tilt));
     z-index: -1;
   }
-
-  @if $base {
-    @include fill($base);
-  }
-
-  @if $hover {
-    &:hover {
-      @include fill($hover);
-    }
-  }
 }
 
-// Emits `.marker-<name>` modifiers so markup can pick each link's colour,
-// plus `.marker-steep` / `.marker-gentle` to tilt a link more or less than the default
-@mixin variants {
+// The class API, emitted once from global.scss:
+//   <a class="marker marker-purple marker-tilt-3">
+// `marker` is required; colour is `marker-<palette name>`; tilt is optional (defaults to 2deg).
+@mixin classes {
+  .marker {
+    @include link;
+  }
+
   @each $name, $pair in $palette {
-    &.marker-#{$name} {
+    .marker-#{$name} {
       @include fill(list.nth($pair, 1));
 
       &:hover {
@@ -94,11 +97,9 @@ $stroke-mask: linear-gradient(100deg, transparent 0.5%, #000 2.5%, #000 96%, tra
     }
   }
 
-  &.marker-steep {
-    --marker-tilt: -3deg;
-  }
-
-  &.marker-gentle {
-    --marker-tilt: -1deg;
+  @each $name, $angle in $tilts {
+    .marker-tilt-#{$name} {
+      --marker-tilt: #{$angle};
+    }
   }
 }

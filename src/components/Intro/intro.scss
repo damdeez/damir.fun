@@ -1,5 +1,4 @@
 @use '../../styles/variables';
-@use '../../styles/marker';
 
 @keyframes blink {  
   0% { 
@@ -72,65 +71,11 @@
       text-transform: capitalize;
       color: #1e1e1e;
       letter-spacing: 0.2px;
-      @include marker.link;
 
       @media screen and (max-width: variables.$mobile) {
         font-size: 15px;
       }
 
-      // Cycle 2deg (default), 3deg, 1deg across the links
-      &:nth-child(3n + 2) {
-        --marker-tilt: 3deg;
-      }
-
-      &:nth-child(3n) {
-        --marker-tilt: -1deg;
-      }
-
-      &:nth-child(1) {
-        @include marker.fill(variables.$white);
-      }
-
-      &:nth-child(2) {
-        @include marker.fill(variables.$color2);
-
-        &:hover {
-          @include marker.fill(variables.$color5);
-        }
-      }
-
-      &:nth-child(3) {
-        @include marker.fill(variables.$color3);
-
-        &:hover {
-          @include marker.fill(variables.$color4);
-        }
-      }
-
-      &:nth-child(4) {
-        @include marker.fill(variables.$color4);
-        
-        &:hover {
-          @include marker.fill(variables.$color3);
-        }
-      }
-
-      &:nth-child(5) {
-        @include marker.fill(variables.$color5);
-
-        &:hover {
-          @include marker.fill(variables.$color2);
-        }
-      }
-
-      &:nth-child(6) {
-        @include marker.fill(variables.$color2);
-        
-        &:hover {
-          @include marker.fill(variables.$white);
-        }
-      }
-  
       &:hover {
         cursor: pointer;
       }

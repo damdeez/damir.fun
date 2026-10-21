@@ -68,7 +68,9 @@ function Showcase({ passHash }: ShowcaseProps) {
           <h1 className='showcase-title'>Showcase 🪩</h1>
           <p>
             This page is password protected.{' '}
-            <a href='mailto:damir.hara@gmail.com'>Contact me</a>{' '}
+            <a className='marker marker-orange' href='mailto:damir.hara@gmail.com'>
+              Contact me
+            </a>{' '}
             for access.
           </p>
           <form
@@ -102,7 +104,7 @@ function Showcase({ passHash }: ShowcaseProps) {
           {error && <p className='showcase-gate-error'>Incorrect password.</p>}
           <div className='showcase-actions'>
             <a className='back-link' href='/'>
-              &larr; Home
+              Home
             </a>
             <a className='back-link' href='/resume'>
               Resume
