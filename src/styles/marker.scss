@@ -12,14 +12,14 @@ $palette: (
   'orange': variables.$color5,
 );
 
-// How much darker (lightness %) a link's own colour gets on hover/focus and while pressed.
-// Capped by purple, the darkest colour: past ~12% the dark link text drops under 4.5:1.
+// How much darker (lightness %) a link's own color gets on hover/focus and while pressed.
+// Capped by purple, the darkest color: past ~12% the dark link text drops under 4.5:1.
 $hover-darken: 8%;
 $active-darken: 12%;
 
 $stroke-mask: linear-gradient(100deg, transparent 0.5%, #000 2.5%, #000 96%, transparent 98.5%);
 
-// Ink colour for a `link`; `$darken` takes a darker shade of the same colour
+// Ink color for a `link`; `$darken` takes a darker shade of the same color
 @mixin fill($base, $darken: 0%) {
   // Soften the palette so the fill reads as ink rather than a solid swatch
   $color: color.scale(
@@ -90,7 +90,7 @@ $tilts: (
 
 // The class API, emitted once from global.scss:
 //   <a class="marker marker-purple marker-tilt-3">
-// `marker` is required; colour is `marker-<palette name>`; tilt is optional (defaults to 2deg).
+// `marker` is required; color is `marker-<palette name>`; tilt is optional (defaults to 2deg).
 @mixin classes {
   .marker {
     @include link;
