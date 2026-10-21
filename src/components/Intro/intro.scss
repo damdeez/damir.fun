@@ -67,12 +67,16 @@
     }
     
     a {
-      font-size: 0.85em;
+      font-size: 17px;
       font-weight: 600;
       text-transform: capitalize;
       color: #1e1e1e;
       letter-spacing: 0.2px;
       @include marker.link;
+
+      @media screen and (max-width: variables.$mobile) {
+        font-size: 15px;
+      }
 
       &:nth-child(even) {
         --marker-tilt: 1.5deg;
