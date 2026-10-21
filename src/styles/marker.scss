@@ -79,7 +79,8 @@ $stroke-mask: linear-gradient(100deg, transparent 0.5%, #000 2.5%, #000 96%, tra
   }
 }
 
-// Emits `.marker-<name>` modifiers so markup can pick each link's colour
+// Emits `.marker-<name>` modifiers so markup can pick each link's colour,
+// plus `.marker-steep` to tilt a link more than its neighbours
 @mixin variants {
   @each $name, $pair in $palette {
     &.marker-#{$name} {
@@ -89,5 +90,9 @@ $stroke-mask: linear-gradient(100deg, transparent 0.5%, #000 2.5%, #000 96%, tra
         @include fill(list.nth($pair, 2));
       }
     }
+  }
+
+  &.marker-steep {
+    --marker-tilt: -3deg;
   }
 }
