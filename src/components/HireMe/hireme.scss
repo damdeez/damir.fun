@@ -1,4 +1,5 @@
 @use '../../styles/variables';
+@use '../../styles/marker';
 
 .hireme-page {
   .hireme-title {
@@ -34,7 +35,8 @@
     }
 
     a {
-      color: variables.$color5;
+      color: variables.$black;
+      @include marker.link(variables.$color5, variables.$color3);
     }
   }
 

@@ -1,5 +1,6 @@
 // Imports
 @use '../styles/variables';
+@use '../styles/marker';
 @import 'https://fonts.googleapis.com/css?family=Inconsolata:300,400,700';
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -159,7 +160,8 @@ table {
     margin: 10px 0;
 
     a {
-      color: variables.$color5;
+      color: variables.$black;
+      @include marker.link(variables.$color5, variables.$color3);
     }
   }
 
