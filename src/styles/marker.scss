@@ -1,25 +1,32 @@
 @use 'sass:color';
-@use 'sass:list';
 @use 'variables';
 
 // Faint ink streaks and paper grain over the fill
 $grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='40' preserveAspectRatio='none'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.1' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.7 0 0 0 -0.43'/%3E%3C/filter%3E%3Cfilter id='s'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.015 0.7' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0 0 0 -0.28'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23s)'/%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E");
 
-// Highlight colour paired with its hover colour
 $palette: (
-  'white': (variables.$white, variables.$color3),
-  'purple': (variables.$color2, variables.$color5),
-  'yellow': (variables.$color3, variables.$color4),
-  'amber': (variables.$color4, variables.$color3),
-  'orange': (variables.$color5, variables.$color2),
+  'white': variables.$white,
+  'purple': variables.$color2,
+  'yellow': variables.$color3,
+  'amber': variables.$color4,
+  'orange': variables.$color5,
 );
+
+// How much darker (lightness %) a link's own color gets on hover/focus and while pressed.
+// Purple is the limit: past ~12% its dark link text drops under 4.5:1 (pressed is slightly past it).
+$hover-darken: 12%;
+$active-darken: 14%;
 
 $stroke-mask: linear-gradient(100deg, transparent 0.5%, #000 2.5%, #000 96%, transparent 98.5%);
 
-// Ink colour for a `link`; include on its own to recolour one (per item or on hover)
-@mixin fill($base) {
+// Ink color for a `link`; `$darken` takes a darker shade of the same color
+@mixin fill($base, $darken: 0%) {
   // Soften the palette so the fill reads as ink rather than a solid swatch
-  $color: color.scale(color.mix($base, variables.$white, 70%), $saturation: -12%);
+  $color: color.scale(
+    color.mix($base, variables.$white, 70%),
+    $saturation: -12%,
+    $lightness: -$darken
+  );
 
   &::before {
     background-color: transparent;
@@ -47,47 +54,66 @@ $stroke-mask: linear-gradient(100deg, transparent 0.5%, #000 2.5%, #000 96%, tra
   }
 }
 
+// Tilt in degrees; negative slopes up to the right
+$tilts: (
+  '1': -1deg,
+  '2': -2deg,
+  '3': -3deg,
+  'down-1': 1deg,
+  'down-2': 2deg,
+  'down-3': 3deg,
+);
+
 // Highlighter stroke drawn on a pseudo-element so it can tilt without tilting the text
-@mixin link($base: null, $hover: null) {
-  padding: 0.1em 0.3em;
+@mixin link {
+  --marker-tilt: -2deg;
+  color: variables.$black;
+  padding: 2px 5px;
   position: relative;
   text-decoration: none;
   white-space: nowrap;
   z-index: 0;
 
   &::before {
-    border-radius: 0.6em 0.25em 0.5em 0.3em;
+    border-radius: 10px 4px 8px 5px;
     content: '';
-    inset: 0 -0.05em;
+    inset: 0 -1px;
     // Fades the ends so the grain follows the ragged stroke on any background
     -webkit-mask-image: $stroke-mask;
     mask-image: $stroke-mask;
     pointer-events: none;
     position: absolute;
-    transform: rotate(var(--marker-tilt, -2deg));
+    transform: rotate(var(--marker-tilt));
     z-index: -1;
-  }
-
-  @if $base {
-    @include fill($base);
-  }
-
-  @if $hover {
-    &:hover {
-      @include fill($hover);
-    }
   }
 }
 
-// Emits `.marker-<name>` modifiers so markup can pick each link's colour
-@mixin variants {
-  @each $name, $pair in $palette {
-    &.marker-#{$name} {
-      @include fill(list.nth($pair, 1));
+// The class API, emitted once from global.scss:
+//   <a class="marker marker-purple marker-tilt-3">
+// `marker` is required; color is `marker-<palette name>`; tilt is optional (defaults to 2deg).
+@mixin classes {
+  .marker {
+    @include link;
+  }
 
-      &:hover {
-        @include fill(list.nth($pair, 2));
+  @each $name, $base in $palette {
+    .marker-#{$name} {
+      @include fill($base);
+
+      &:hover,
+      &:focus-visible {
+        @include fill($base, $hover-darken);
       }
+
+      &:active {
+        @include fill($base, $active-darken);
+      }
+    }
+  }
+
+  @each $name, $angle in $tilts {
+    .marker-tilt-#{$name} {
+      --marker-tilt: #{$angle};
     }
   }
 }

@@ -1,5 +1,4 @@
 @use '../../styles/variables';
-@use '../../styles/marker';
 
 .hireme-page {
   .hireme-title {
@@ -33,15 +32,6 @@
       line-height: 26px;
       margin-bottom: 6px;
     }
-
-    a {
-      color: variables.$black;
-      @include marker.link(variables.$color5, variables.$color3);
-    }
-  }
-
-  a {
-    @include marker.variants;
   }
 
   .hireme-actions {

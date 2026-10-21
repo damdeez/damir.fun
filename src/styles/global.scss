@@ -145,6 +145,8 @@ table {
 }
 // End CSS Reset
 
+@include marker.classes;
+
 .main-page-content {
   background-color: variables.$black;
   color: variables.$white;
@@ -158,11 +160,6 @@ table {
   p {
     line-height: 30px;
     margin: 10px 0;
-
-    a {
-      color: variables.$black;
-      @include marker.link(variables.$color5, variables.$color3);
-    }
   }
 
   @media screen and (max-width: variables.$mobile) {

@@ -1,5 +1,4 @@
 @use "../../styles/variables";
-@use "../../styles/marker";
 
 .resume {
   background-color: variables.$white;
@@ -34,19 +33,6 @@ h1.headline {
   font-size: 36px;
   margin: 5px 0 0 20px;
   vertical-align: top;
-
-  a {
-    color: variables.$color1;
-    @include marker.link(variables.$color2, variables.$color5);
-
-    &:nth-child(2) {
-      @include marker.fill(variables.$color3);
-
-      &:hover {
-        @include marker.fill(variables.$color4);
-      }
-    }
-  }
 }
 
 .hidden-text {
@@ -186,12 +172,6 @@ h1.headline {
 .projects-container,
 .education-container {
   margin-top: 25px;
-}
-
-.job-link {
-  color: variables.$color1;
-  @include marker.link(variables.$color3, variables.$color4);
-  @include marker.variants;
 }
 
 .skills-wrapper {
