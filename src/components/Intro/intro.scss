@@ -80,7 +80,7 @@
 
       // Cycle 2deg (default), 3deg, 1deg across the links
       &:nth-child(3n + 2) {
-        --marker-tilt: -3deg;
+        --marker-tilt: 3deg;
       }
 
       &:nth-child(3n) {

@@ -37,7 +37,6 @@ h1.headline {
 
   a {
     color: variables.$color1;
-    --marker-tilt: -2deg;
     @include marker.link(variables.$color2, variables.$color5);
 
     &:nth-child(2) {
