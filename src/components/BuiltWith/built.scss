@@ -1,4 +1,5 @@
 @use '../../styles/variables';
+@use '../../styles/marker';
 
 .built-with {
   color: variables.$color3;
@@ -10,7 +11,8 @@
   right: 40px;
 
   a {
-    color: variables.$color3;
+    color: variables.$black;
+    @include marker.link(variables.$color3, variables.$color4);
   }
 
   @media screen and (max-width: variables.$mobile) {
