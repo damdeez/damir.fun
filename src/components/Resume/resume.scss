@@ -37,7 +37,7 @@ h1.headline {
 
   a {
     color: variables.$color1;
-    @include marker.link(variables.$color3, variables.$color2);
+    @include marker.link(variables.$color2, variables.$color3);
   }
 }
 
@@ -182,7 +182,7 @@ h1.headline {
 
 .job-link {
   color: variables.$color1;
-  @include marker.link(variables.$color3, variables.$color2);
+  @include marker.link(variables.$color2, variables.$color3);
 }
 
 .skills-wrapper {
