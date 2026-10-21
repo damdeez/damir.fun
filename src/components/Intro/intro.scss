@@ -78,8 +78,13 @@
         font-size: 15px;
       }
 
-      &:nth-child(even) {
+      // Cycle 2deg (default), 3deg, 1deg across the links
+      &:nth-child(3n + 2) {
         --marker-tilt: -3deg;
+      }
+
+      &:nth-child(3n) {
+        --marker-tilt: -1deg;
       }
 
       &:nth-child(1) {
