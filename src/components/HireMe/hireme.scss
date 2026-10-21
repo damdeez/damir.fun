@@ -40,6 +40,10 @@
     }
   }
 
+  a {
+    @include marker.variants;
+  }
+
   .hireme-actions {
     display: flex;
     gap: 10px;
