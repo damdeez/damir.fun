@@ -14,7 +14,7 @@ $palette: (
 
 // How much darker (lightness %) a link's own color gets on hover/focus and while pressed.
 // Capped by purple, the darkest color: past ~12% the dark link text drops under 4.5:1.
-$hover-darken: 8%;
+$hover-darken: 10%;
 $active-darken: 12%;
 
 $stroke-mask: linear-gradient(100deg, transparent 0.5%, #000 2.5%, #000 96%, transparent 98.5%);
@@ -68,16 +68,16 @@ $tilts: (
 @mixin link {
   --marker-tilt: -2deg;
   color: variables.$black;
-  padding: 0.1em 0.3em;
+  padding: 2px 5px;
   position: relative;
   text-decoration: none;
   white-space: nowrap;
   z-index: 0;
 
   &::before {
-    border-radius: 0.6em 0.25em 0.5em 0.3em;
+    border-radius: 10px 4px 8px 5px;
     content: '';
-    inset: 0 -0.05em;
+    inset: 0 -1px;
     // Fades the ends so the grain follows the ragged stroke on any background
     -webkit-mask-image: $stroke-mask;
     mask-image: $stroke-mask;
