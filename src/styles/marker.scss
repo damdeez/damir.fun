@@ -68,6 +68,8 @@ $tilts: (
 @mixin link {
   --marker-tilt: -2deg;
   color: variables.$black;
+  font-family: variables.$marker-font-family;
+  font-size: 1.3em;
   padding: 2px 5px;
   position: relative;
   text-decoration: none;
