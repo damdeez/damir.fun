@@ -66,9 +66,9 @@
     }
     
     a {
-      font-size: 17px;
+      font-size: 0.9em;
       text-transform: capitalize;
-      color: #1e1e1e;
+      color: variables.$color1;
       letter-spacing: 0.2px;
 
       @media screen and (max-width: variables.$mobile) {

@@ -45,7 +45,7 @@ h1.headline {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  gap: 5px;
+  gap: 2px;
   font-size: 22px;
   font-weight: normal;
   margin: 5px 0;
@@ -59,9 +59,14 @@ h1.headline {
   font-size: 20px;
 }
 
+.email-link a:not(.link) {
+  align-items: baseline;
+  display: flex;
+  gap: 5px;
+}
+
 .email-link svg,
 .link svg {
-  margin-left: 2px;
   margin-bottom: -3px;
 }
 
@@ -174,6 +179,26 @@ h1.headline {
   margin-top: 25px;
 }
 
+.education-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 20px 0;
+
+  h4 {
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  h5 {
+    font-size: 15px;
+  }
+}
+
 .skills-wrapper {
   flex: 1 0 50%;
   margin: 0;
@@ -277,7 +302,7 @@ h1.headline {
 
   .email-link {
     font-size: 15px;
-    gap: 2px;
+    gap: 0px;
   }
 
   .resume .marker {
