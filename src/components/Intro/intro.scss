@@ -2,35 +2,38 @@
 @use '../../styles/variables';
 
 // Faint ink streaks and paper grain over the fill; dark-only so they vanish outside the stroke
-$marker-grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='40' preserveAspectRatio='none'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.1' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.9 0 0 0 -0.38'/%3E%3C/filter%3E%3Cfilter id='s'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.015 0.7' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.7 0 0 0 -0.3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23s)'/%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E");
+$marker-grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='40' preserveAspectRatio='none'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.1' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.8 0 0 0 -0.42'/%3E%3C/filter%3E%3Cfilter id='s'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.015 0.7' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.6 0 0 0 -0.3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23s)'/%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E");
 
 // Ragged, slightly skewed fill that reads like a highlighter stroke
 @mixin marker($base) {
   // Soften the palette so the fill reads as ink rather than a solid swatch
   $color: color.scale(color.mix($base, variables.$white, 70%), $saturation: -12%);
 
-  background-color: transparent;
-  background-image:
-    $marker-grain,
-    linear-gradient(
-      100deg,
-      rgba($color, 0) 0.9%,
-      rgba($color, 0.95) 2.4%,
-      rgba($color, 0.82) 5.8%,
-      rgba($color, 0.9) 50%,
-      rgba($color, 0.78) 93%,
-      rgba($color, 0.95) 96%,
-      rgba($color, 0) 98%
-    ),
-    linear-gradient(
-      183deg,
-      rgba($color, 0) 0%,
-      rgba($color, 0.3) 7.9%,
-      rgba($color, 0) 15%
-    );
-  background-position: 0 70%;
-  background-repeat: repeat-x, no-repeat, no-repeat;
-  background-size: 160px 78%, 100% 78%, 100% 78%;
+  // Drawn on a pseudo-element so the stroke can tilt without tilting the text
+  &::before {
+    background-color: transparent;
+    background-image:
+      $marker-grain,
+      linear-gradient(
+        100deg,
+        rgba($color, 0) 0.9%,
+        rgba($color, 0.95) 2.4%,
+        rgba($color, 0.82) 5.8%,
+        rgba($color, 0.9) 50%,
+        rgba($color, 0.78) 93%,
+        rgba($color, 0.95) 96%,
+        rgba($color, 0) 98%
+      ),
+      linear-gradient(
+        183deg,
+        rgba($color, 0) 0%,
+        rgba($color, 0.3) 7.9%,
+        rgba($color, 0) 15%
+      );
+    background-position: 0 70%;
+    background-repeat: repeat-x, no-repeat, no-repeat;
+    background-size: 160px 78%, 100% 78%, 100% 78%;
+  }
 }
 
 @keyframes blink {  
@@ -107,9 +110,22 @@ $marker-grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'
       color: #1e1e1e;
       letter-spacing: 0.2px;
       padding: 0.1em 0.3em;
-      border-radius: 0.6em 0.25em 0.5em 0.3em;
-      -webkit-box-decoration-break: clone;
-      box-decoration-break: clone;
+      position: relative;
+      z-index: 0;
+
+      &::before {
+        content: '';
+        position: absolute;
+        inset: 0 -0.05em;
+        z-index: -1;
+        border-radius: 0.6em 0.25em 0.5em 0.3em;
+        transform: rotate(var(--marker-tilt, -2deg));
+        pointer-events: none;
+      }
+
+      &:nth-child(even) {
+        --marker-tilt: 1.5deg;
+      }
 
       &:nth-child(1) {
         @include marker(variables.$white);
