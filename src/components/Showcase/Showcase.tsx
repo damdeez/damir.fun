@@ -190,7 +190,7 @@ function Showcase({ passHash }: ShowcaseProps) {
 
       <div className='showcase-actions'>
         <a className='back-link' href='/'>
-          &larr; Home
+          Home
         </a>
         <a className='back-link' href='/resume'>
           Resume
