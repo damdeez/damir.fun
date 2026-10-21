@@ -1,4 +1,5 @@
 ---
+import { Font } from 'astro:assets';
 import { ClientRouter, fade } from 'astro:transitions';
 import { pageTitle } from '../constants/strings';
 
@@ -21,6 +22,8 @@ const { title, noindex = false } = Astro.props;
 		<meta name="apple-mobile-web-app-title" content="Damir Resume">
 		<meta name="mobile-web-app-capable" content="yes">
 		<meta name="generator" content={Astro.generator} />
+		<Font cssVariable="--font-inconsolata" preload />
+		<Font cssVariable="--font-gochi-hand" preload />
 		{noindex && <meta name="robots" content="noindex, nofollow" />}
 		<title>{title ?? 'damir.fun | ' + pageTitle}</title>
 		<ClientRouter />
