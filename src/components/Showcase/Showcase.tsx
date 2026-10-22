@@ -68,7 +68,7 @@ function Showcase({ passHash }: ShowcaseProps) {
           <h1 className='showcase-title'>Showcase 🪩</h1>
           <p>
             This page is password protected.{' '}
-            <a className='marker marker-orange' href='mailto:damir.hara@gmail.com'>
+            <a className='marker marker-purple' href='mailto:damir.hara@gmail.com'>
               Contact me
             </a>{' '}
             for access.
