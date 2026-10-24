@@ -1,16 +1,91 @@
 ---
-import { createHash } from 'node:crypto';
+import { createHash, createHmac, timingSafeEqual } from 'node:crypto';
+import { SHOWCASE_LINK_TOKEN, SHOWCASE_PASSWORD } from 'astro:env/server';
 import { pageTitle } from '../constants/strings';
 import Layout from '../layouts/Layout.astro';
 import '../styles/global.scss';
-import ShowcaseComponent from '../components/Showcase/Showcase';
+import ShowcaseComponent from '../components/Showcase/Showcase.astro';
 
-const password = import.meta.env.SHOWCASE_PASSWORD as string | undefined;
-const passHash = password
-  ? createHash('sha256').update(password).digest('hex')
+export const prerender = false;
+
+const COOKIE_NAME = 'showcase_session';
+const SESSION_MAX_AGE = 60 * 60 * 24 * 30;
+
+// Rotating either secret invalidates every existing session.
+const signingKey = SHOWCASE_PASSWORD
+  ? `${SHOWCASE_PASSWORD}:${SHOWCASE_LINK_TOKEN ?? ''}`
   : '';
+
+const sign = (value: string) =>
+  createHmac('sha256', signingKey).update(value).digest('hex');
+
+// Hashing first keeps the comparison constant-time regardless of input length.
+const safeEqual = (a: string, b: string) =>
+  timingSafeEqual(
+    createHash('sha256').update(a).digest(),
+    createHash('sha256').update(b).digest(),
+  );
+
+const hasValidSession = () => {
+  const [expiresAt, signature] =
+    Astro.cookies.get(COOKIE_NAME)?.value.split('.') ?? [];
+
+  return Boolean(
+    signingKey &&
+      expiresAt &&
+      signature &&
+      Number(expiresAt) > Date.now() &&
+      safeEqual(signature, sign(expiresAt)),
+  );
+};
+
+const startSession = () => {
+  const expiresAt = String(Date.now() + SESSION_MAX_AGE * 1000);
+
+  Astro.cookies.set(COOKIE_NAME, `${expiresAt}.${sign(expiresAt)}`, {
+    httpOnly: true,
+    secure: import.meta.env.PROD,
+    sameSite: 'lax',
+    path: '/showcase',
+    maxAge: SESSION_MAX_AGE,
+  });
+};
+
+Astro.response.headers.set('Cache-Control', 'private, no-store');
+
+const linkToken = Astro.url.searchParams.get('t');
+
+if (linkToken !== null) {
+  if (signingKey && SHOWCASE_LINK_TOKEN && safeEqual(linkToken, SHOWCASE_LINK_TOKEN)) {
+    startSession();
+  }
+
+  return Astro.redirect('/showcase', 303);
+}
+
+let passwordError = false;
+
+if (Astro.request.method === 'POST') {
+  const formData = await Astro.request.formData().catch(() => null);
+  const password = formData?.get('password');
+
+  if (
+    signingKey &&
+    SHOWCASE_PASSWORD &&
+    typeof password === 'string' &&
+    safeEqual(password, SHOWCASE_PASSWORD)
+  ) {
+    startSession();
+    return Astro.redirect('/showcase', 303);
+  }
+
+  passwordError = true;
+  Astro.response.status = 401;
+}
+
+const authenticated = hasValidSession();
 ---
 
 <Layout title={"damir.fun | Showcase | " + pageTitle} noindex>
-  <ShowcaseComponent client:only="react" passHash={passHash} />
+  <ShowcaseComponent authenticated={authenticated} error={passwordError} />
 </Layout>

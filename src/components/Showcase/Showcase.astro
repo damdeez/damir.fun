@@ -1,0 +1,129 @@
+---
+import './showcase.scss';
+
+interface Props {
+  authenticated: boolean;
+  error: boolean;
+}
+
+const { authenticated, error } = Astro.props;
+---
+
+{
+  authenticated ? (
+    <main class='main-page-content showcase-page'>
+      <h1 class='showcase-title'>Showcase 🪩</h1>
+      <section class='showcase-section'>
+        <p>
+          A collection of clips and video walkthroughs from projects I've been
+          working on.
+        </p>
+      </section>
+
+      <section class='showcase-section'>
+        <h2 class='showcase-section-title'>
+          Varo Bank | <span>Pay Later</span>
+        </h2>
+        <p>
+          The "How Pay Later works" carousel. My focus was bringing the design
+          vision to life: animating the images and the page progression pills
+          underneath the content. Built with React Native (Expo) and TypeScript.
+        </p>
+        <picture class='showcase-clip'>
+          <source
+            media='(prefers-reduced-motion: reduce)'
+            srcset='/images/varo-pay-later-still.png'
+          />
+          <img
+            src='/images/varo-pay-later.gif'
+            alt='Varo Pay Later carousel animating through its steps, starting with Plan your purchase'
+            width='295'
+            height='640'
+            loading='lazy'
+          />
+        </picture>
+      </section>
+
+      {/* Add video sections below — replace src with your embed URL (YouTube, Loom, Vimeo, etc.) */}
+      <section class='showcase-section'>
+        <h2 class='showcase-section-title'>
+          Varo Bank | <span>Pay Over Time</span>
+        </h2>
+        <p>
+          Quick walkthrough of the Pay Over Time feature I helped build. I was
+          the lead Engineer on this project, working with technologies such as:
+          React Native (Expo), TypeScript, Jotai, GraphQL, NodeJS, etc.
+        </p>
+        <div class='showcase-video-wrapper'>
+          <iframe
+            src='https://www.loom.com/embed/155faf584a814707a9c4c075af455348?hideEmbedTopBar=true'
+            title='Varo Bank | Pay Over Time Feature Walkthrough'
+            allowfullscreen
+            allow='autoplay; fullscreen; picture-in-picture'
+          />
+        </div>
+      </section>
+      <section class='showcase-section'>
+        <h2 class='showcase-section-title'>
+          Varo Bank | <span>My Varo</span>
+        </h2>
+        <p>
+          Quick walkthrough of My Varo Section which I led a small team to
+          build. Technologies used: React Native (Expo), TypeScript, GraphQL,
+          NodeJS, etc.
+        </p>
+        <div class='showcase-video-wrapper'>
+          <iframe
+            src='https://www.loom.com/embed/489fc954c02047cd82b3d7b7fc9eb5f8?hideEmbedTopBar=true'
+            title='Varo Bank | My Varo Section Walkthrough'
+            allowfullscreen
+            allow='autoplay; fullscreen; picture-in-picture'
+          />
+        </div>
+      </section>
+
+      <div class='showcase-actions'>
+        <a class='back-link' href='/'>Home</a>
+        <a class='back-link' href='/resume'>Resume</a>
+      </div>
+    </main>
+  ) : (
+    <main class='main-page-content showcase-page showcase-page-gate'>
+      <div class='showcase-gate'>
+        <h1 class='showcase-title'>Showcase 🪩</h1>
+        <p>
+          This page is password protected.{' '}
+          <a class='marker marker-purple' href='mailto:damir.hara@gmail.com'>
+            Contact me
+          </a>{' '}
+          for access.
+        </p>
+        <form
+          class='showcase-gate-form'
+          method='post'
+          action='/showcase'
+          data-astro-reload
+        >
+          <input
+            type='password'
+            name='password'
+            class='showcase-gate-input'
+            placeholder='Password'
+            aria-label='Password'
+            autocomplete='current-password'
+            required
+            autofocus
+          />
+          <button class='showcase-gate-btn' type='submit'>
+            Enter
+          </button>
+        </form>
+        {error && <p class='showcase-gate-error'>Incorrect password.</p>}
+        <div class='showcase-actions'>
+          <a class='back-link' href='/'>Home</a>
+          <a class='back-link' href='/resume'>Resume</a>
+        </div>
+      </div>
+    </main>
+  )
+}
