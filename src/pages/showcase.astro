@@ -87,7 +87,9 @@ if (Astro.request.method === 'POST') {
   Astro.response.status = 401;
 }
 
-const authenticated = validLinkToken || hasValidSession();
+// `?gate` always shows the password form, even with a valid session.
+const forceGate = Astro.url.searchParams.has('gate');
+const authenticated = validLinkToken || (!forceGate && hasValidSession());
 ---
 
 <Layout title={"damir.fun | Showcase | " + pageTitle} noindex>
