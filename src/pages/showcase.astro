@@ -53,14 +53,18 @@ const startSession = () => {
 
 Astro.response.headers.set('Cache-Control', 'private, no-store');
 
+// Rendered in place rather than redirected: Netlify carries the query string
+// over to redirect targets, so redirecting would loop on the token URL.
 const linkToken = Astro.url.searchParams.get('t');
+const validLinkToken = Boolean(
+  linkToken !== null &&
+    signingKey &&
+    SHOWCASE_LINK_TOKEN &&
+    safeEqual(linkToken, SHOWCASE_LINK_TOKEN),
+);
 
-if (linkToken !== null) {
-  if (signingKey && SHOWCASE_LINK_TOKEN && safeEqual(linkToken, SHOWCASE_LINK_TOKEN)) {
-    startSession();
-  }
-
-  return Astro.redirect('/showcase', 303);
+if (validLinkToken) {
+  startSession();
 }
 
 let passwordError = false;
@@ -83,9 +87,16 @@ if (Astro.request.method === 'POST') {
   Astro.response.status = 401;
 }
 
-const authenticated = hasValidSession();
+const authenticated = validLinkToken || hasValidSession();
 ---
 
 <Layout title={"damir.fun | Showcase | " + pageTitle} noindex>
   <ShowcaseComponent authenticated={authenticated} error={passwordError} />
+  {
+    linkToken !== null && (
+      <script is:inline>
+        history.replaceState(history.state, '', location.pathname + location.hash);
+      </script>
+    )
+  }
 </Layout>
